@@ -10,60 +10,61 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import About from './pages/About';
+import Home from './pages/Home';
 import Project1 from './pages/Project1';
 import Project2 from './pages/Project2';
 import Project3 from './pages/Project3';
+import avatar from './assests/avatar.png';
 
 
 function App() {
   return (
-       
+
         <Router>
-           <Container>
           <Row>
-          <h1>Angela George</h1>
-            <Nav variant="tabs" defaultActiveKey="link-0">
-              
-            
-              <Nav.Item>
-                <LinkContainer to="/">
-                  <Nav.Link eventKey="link-0">About</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-            
+            <Col>
+              <img className='avatar' src= {avatar} alt="big tech style avatar"/>
+              <Row style={{marginTop:"4%"}}>
+              <h1>Angela George</h1>
+              </Row>
+                <Nav variant="tabs" defaultActiveKey="link-0" style={{marginTop:"2%"}}>
+                  <Nav.Item>
+                    <LinkContainer to="/">
+                      <Nav.Link eventKey="link-0">Home</Nav.Link>
+                    </LinkContainer>
+                  </Nav.Item>
+                
+                  <Nav.Item>
+                    <LinkContainer to="/cal-chat">
+                      <Nav.Link eventKey="link-1">CalendarChat</Nav.Link>
+                    </LinkContainer>
+                  </Nav.Item>
 
-              
-              <Nav.Item>
-                <LinkContainer to="/cal-chat">
-                  <Nav.Link eventKey="link-1">Calendar Chat</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-              
+                  <Nav.Item>
+                    <LinkContainer to="/coffee-redesign">
+                      <Nav.Link eventKey="link-2">Blue Nose Coffee Redesign</Nav.Link>
+                    </LinkContainer>
+                  </Nav.Item>
 
-              <Nav.Item>
-                <LinkContainer to="/coffee-redesign">
-                  <Nav.Link eventKey="link-2">Blue Nose Coffee Redesign</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-
-              <Nav.Item>
-                <LinkContainer to="/snapchat-feature">
-                  <Nav.Link eventKey="link-3">Snapchat Feature Implementation</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-            </Nav>
+                  <Nav.Item>
+                    <LinkContainer to="/snapchat-feature">
+                      <Nav.Link eventKey="link-3">Snapchat Feature Implementation</Nav.Link>
+                    </LinkContainer>
+                  </Nav.Item>
+                </Nav>
+                <Col style={{marginLeft:"20%"}}>
+                  <Routes>
+                    <Route element={<Home />} path="/" />
+                    <Route element={<Project1 />} path="/cal-chat"/>
+                    <Route element={<Project2 />} path="/coffee-redesign"/>
+                    <Route element={<Project3 />} path="/snapchat-feature"/>
+                  </Routes>
+                </Col>
+            </Col>
           </Row>
-
-
-            <Routes>
-            <Route element={<About />} path="/" />
-              <Route element={<Project1 />} path="/cal-chat"/>
-              <Route element={<Project2 />} path="/coffee-redesign"/>
-              <Route element={<Project3 />} path="/snapchat-feature"/>
-            </Routes>
-            </Container>
+         
           </Router>
+
   );
 
 
