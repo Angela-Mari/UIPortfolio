@@ -6,10 +6,8 @@ function Home() {
         <Row>
             <Col xs={11}>
             <Row style={{marginTop:"2%"}}>
-                <h2>Hi</h2>
-                <p>This is a bunch of info about me! This is a bunch of info about me! This is a bunch of 
-                    info about me! This is a bunch of info about me! vThis is a bunch of info about me! This
-                     is a bunch of info about me! </p>
+                <h2>Hola.</h2>
+                <p>I am a recent Gonzaga graduate looking to start my career in UI/UX design. I have been passionate about visual art and design for as long as I can remeber and in college I was introduced to the field of computer sciecne. I always struggled to find an intersection between my createive and technical skills but after taking a UI/UX course my last semester of senior year I realized that was the niche for me. Working in UI/UX is something that perfectly meshes my eye for design with my technical background while also falling in line with the powerful mission to make the world accessible and enjoyable by all.</p>
             </Row>
             <Row>
             <CardGroup>
