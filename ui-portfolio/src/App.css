@@ -9,6 +9,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.contain-me {
+  overflow: hidden;
+}
 h1 {
   font-family: 'Sansita', cursive;
   font-size: 5em !important;
@@ -25,7 +28,13 @@ link {
 }
 
 .card {
-  border-width: 0 !important;
+  margin: 10px;
+  border: 0px !important;
+  box-shadow: 10px 10px 20px whitesmoke !important;
+}
+
+.card:hover{
+  scale: 1.05;
 }
 
 .nav {
@@ -95,4 +104,13 @@ link {
     z-index: 50;
     width:150px;
   }
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-link:hover{
+  color: black;
 }

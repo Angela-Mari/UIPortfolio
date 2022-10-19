@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   return (
-        <div>
+        <div className="contain-me">
         <Router>
           <div className='content-main'>
           
@@ -41,7 +41,7 @@ function App() {
                 <Col >
                   <img className='avatar' src= {avatar} alt="big tech style avatar"/>
                   <Row style={{marginTop:"4%"}}>
-                  <h1 style={ matches ? {marginLeft:"20%"}: {}}>Ángela George</h1>
+                  <h1 style={ matches ? {marginLeft:"20%", marginBottom:"2%"}: {}}>Ángela George</h1>
                   </Row>
                     <Nav variant="tabs" defaultActiveKey="link-0">
                         <Nav.Item>
@@ -118,7 +118,7 @@ function App() {
                       </Navbar.Collapse>
                     </Container>
                   </Navbar>
-                  <Container>
+                  <Container >
                   <Routes>
                     <Route element={<Home />} path="/" />
                     <Route element={<Project1 />} path="/cal-chat"/>
