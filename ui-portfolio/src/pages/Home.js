@@ -30,8 +30,8 @@ function Home() {
                 </Row>
                 <Col lg={ matches ? 12 : 10 } md = {10} style={{marginBottom:'0.5rem'}}>
                     <CardGroup>
-                                <a className= "card-link" href = "https://www.linkedin.com/in/angela-george-a5073b164/">
-                                <Card style={{ width: '15rem', height : '18rem'}}>
+                                <a className= "card-link" href = "https://artfullyange.notion.site/Google-UI-UX-Certification-6abcd5d8a49b4765b34fdae891a5d2e9">
+                                <Card style={{ width: '15rem', height : '18rem'}} className="card-home">
                                     <Card.Body>
                                     <Row style={{padding:"15px"}}><Col><img alt="google logo" src="https://img.icons8.com/fluency/120/000000/google-logo.png" height="60px"/></Col></Row>
                                     <Card.Title>UI/UX Certification</Card.Title>
@@ -42,7 +42,7 @@ function Home() {
                                 </Card>
                                 </a>
                                 <a className= "card-link" href = "https://github.com/Angela-Mari/UIPortfolio">
-                                <Card style={{ width: '15rem', height : '18rem'}}>
+                                <Card style={{ width: '15rem', height : '18rem'}} className="card-home">
                                         <Card.Body>
                                         <Row style={{padding:"15px"}}><Col><img alt="GitHub logo" src="https://img.icons8.com/ios-glyphs/120/000000/github.png" height="60px"/></Col></Row>
                                         <Card.Title>GitHub Repository</Card.Title>
@@ -53,7 +53,7 @@ function Home() {
                                 </Card>
                                 </a>
                                 <a className= "card-link" href = "https://www.linkedin.com/in/angela-george-a5073b164/">
-                                <Card style={{ width: '15rem', height : '18rem' }}>
+                                <Card style={{ width: '15rem', height : '18rem' }} className="card-home">
                                         <Card.Body>
                                         <Row style={{padding:"15px"}}><Col><img alt="GitHub logo" src="https://img.icons8.com/color/144/000000/linkedin-circled--v1.png" height="60px"/></Col></Row>
                                         <Card.Title>LinkedIn Profile</Card.Title>
@@ -64,7 +64,7 @@ function Home() {
                                 </Card>
                                 </a>
                                 <a className= "card-link" href = "https://angelageorge.com/">
-                                <Card style={{ width: '15rem', height : '18rem' }}>
+                                <Card style={{ width: '15rem', height : '18rem' }} className="card-home">
                                         <Card.Body>
                                         <Row style={{padding:"15px"}}><Col><img alt="Website logo" src={webLogo} height="60px"/></Col></Row>
                                         <Card.Title>Personal Blog</Card.Title>

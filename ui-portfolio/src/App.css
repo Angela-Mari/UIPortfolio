@@ -33,7 +33,7 @@ link {
   box-shadow: 10px 10px 20px whitesmoke !important;
 }
 
-.card:hover{
+.card-home:hover{
   scale: 1.05;
 }
 
@@ -113,4 +113,15 @@ link {
 
 .card-link:hover{
   color: black;
+}
+
+.phone-resource {
+  margin: 10px;
+  width:270px;
+  height:480px;
+  border-radius: 25px;
+  border-width: 0 !important;
+  background: whitesmoke;
+  box-shadow: 10px 10px 20px whitesmoke !important;
+  object-fit: cover;
 }
