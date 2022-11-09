@@ -52,13 +52,13 @@ function App() {
                       
                         <Nav.Item>
                           <LinkContainer to="/cal-chat">
-                            <Nav.Link eventKey="link-1">CalendarChat</Nav.Link>
+                            <Nav.Link eventKey="link-1">CalChat Mobile App</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
                           <LinkContainer to="/coffee-redesign">
-                            <Nav.Link eventKey="link-2">Blue Nose Coffee Redesign</Nav.Link>
+                            <Nav.Link eventKey="link-2">BlueNose Coffee Redesign</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
@@ -99,13 +99,13 @@ function App() {
                       
                         <Nav.Item>
                           <LinkContainer to="/cal-chat">
-                            <Nav.Link eventKey="link-1">CalendarChat</Nav.Link>
+                            <Nav.Link eventKey="link-1">CalChat Mobile App</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
                           <LinkContainer to="/coffee-redesign">
-                            <Nav.Link eventKey="link-2">Blue Nose Coffee Redesign</Nav.Link>
+                            <Nav.Link eventKey="link-2">BlueNose Coffee Redesign</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
