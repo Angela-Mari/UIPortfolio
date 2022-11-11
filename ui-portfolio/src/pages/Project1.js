@@ -1,4 +1,4 @@
-import {Row, Col, Card, CardGroup, Container} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 import phone from "../assests/phone.png"
 
 
@@ -38,7 +38,7 @@ function Project1() {
                                 loading="lazy" 
                                 className='canva-iframe'
                                 src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFRNjSNOEE&#x2F;view?embed" 
-                                allowfullscreen="allowfullscreen" 
+                                allowFullScreen="allowFullScreen" 
                                 allow="fullscreen">
                             </iframe>
                         </div>

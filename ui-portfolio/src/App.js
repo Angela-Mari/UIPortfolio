@@ -9,7 +9,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './pages/Home';
 import Project1 from './pages/Project1';
@@ -31,6 +30,21 @@ function App() {
     .addEventListener('change', e => setMatches( e.matches ));
   }, []);
 
+  const [key, setKey] = useState("link-0");
+
+  useEffect(() => {
+    localStorage.setItem("activeTab", JSON.stringify(key));
+    }, [key]);
+
+  useEffect(() => {
+  const getActiveTab = JSON.parse(localStorage.getItem("activeTab"));
+  if (getActiveTab) {
+  setKey(getActiveTab);
+  }
+  }, []);
+
+  
+
   return (
         <div className="contain-me">
         <Router>
@@ -43,28 +57,28 @@ function App() {
                   <Row style={{marginTop:"4%"}}>
                   <h1 style={ matches ? {marginLeft:"20%", marginBottom:"2%"}: {}}>Ángela George</h1>
                   </Row>
-                    <Nav variant="tabs" defaultActiveKey="link-0">
+                    <Nav variant="tabs" activeKey={key} onSelect={(k) => setKey(k)}>
                         <Nav.Item>
                           <LinkContainer to="/">
-                            <Nav.Link eventKey="link-0">Home</Nav.Link>
+                            <Nav.Link eventKey="home">Home</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
                       
                         <Nav.Item>
                           <LinkContainer to="/cal-chat">
-                            <Nav.Link eventKey="link-1">CalChat Mobile App</Nav.Link>
+                            <Nav.Link eventKey="cal-chat">CalChat Mobile App</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
                           <LinkContainer to="/coffee-redesign">
-                            <Nav.Link eventKey="link-2">BlueNose Coffee Redesign</Nav.Link>
+                            <Nav.Link eventKey="coffee-redesign">BlueNose Coffee Redesign</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
                           <LinkContainer to="/snapchat-feature">
-                            <Nav.Link eventKey="link-3">Snapchat Feature Implementation</Nav.Link>
+                            <Nav.Link eventKey="snapchat-feature">Snapchat Feature Implementation</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
                     </Nav> 

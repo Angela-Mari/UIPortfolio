@@ -1,6 +1,14 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import '../App.css';
+
 function Project2() {
     return (
-    <div>This is Project 2</div>
+    <Container>
+    <Row>  
+        <h2 className = "my-center" >Coming Soon!</h2>
+    </Row>
+    </Container>
     );
 }
 
