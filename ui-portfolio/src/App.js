@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 import Home from './pages/Home';
 import Project1 from './pages/Project1';
@@ -30,18 +31,29 @@ function App() {
     .addEventListener('change', e => setMatches( e.matches ));
   }, []);
 
-  const [key, setKey] = useState("link-0");
+  const [key, setKey] = useState("/ui-portfolio/");
 
+  //put in local storage
   useEffect(() => {
-    localStorage.setItem("activeTab", JSON.stringify(key));
+    console.log("put in local storage")
+    const getActiveTab = JSON.parse(localStorage.getItem("activeTab"));
+    if (!getActiveTab){
+      console.log("storage is undefined")
+      localStorage.setItem("activeTab", JSON.stringify(key));
+    }
+    console.log(key)
     }, [key]);
 
+  //retreive from local storage
   useEffect(() => {
+    console.log("retrevie from local storage")
   const getActiveTab = JSON.parse(localStorage.getItem("activeTab"));
   if (getActiveTab) {
   setKey(getActiveTab);
+  console.log(key)
+  console.log("in use effect 1")
   }
-  }, []);
+  }, [key]);
 
   
 
@@ -59,35 +71,35 @@ function App() {
                   </Row>
                     <Nav variant="tabs" activeKey={key} onSelect={(k) => setKey(k)}>
                         <Nav.Item>
-                          <LinkContainer to="/">
-                            <Nav.Link eventKey="home">Home</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/">
+                            <Nav.Link eventKey="/ui-portfolio/">Home</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
                       
                         <Nav.Item>
-                          <LinkContainer to="/cal-chat">
-                            <Nav.Link eventKey="cal-chat">CalChat Mobile App</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/cal-chat">
+                            <Nav.Link eventKey="/ui-portfolio/cal-chat">CalChat Mobile App</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
-                          <LinkContainer to="/coffee-redesign">
-                            <Nav.Link eventKey="coffee-redesign">BlueNose Coffee Redesign</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/coffee-redesign">
+                            <Nav.Link eventKey="/ui-portfolio/coffee-redesign">BlueNose Coffee Redesign</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
-                          <LinkContainer to="/snapchat-feature">
-                            <Nav.Link eventKey="snapchat-feature">Snapchat Feature Implementation</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/snapchat-feature">
+                            <Nav.Link eventKey="/ui-portfolio/snapchat-feature">Snapchat Feature Implementation</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
                     </Nav> 
                   <Container style={{marginLeft:"20%"}}>
                   <Routes>
-                    <Route element={<Home />} path="/" />
-                    <Route element={<Project1 />} path="/cal-chat"/>
-                    <Route element={<Project2 />} path="/coffee-redesign"/>
-                    <Route element={<Project3 />} path="/snapchat-feature"/>
+                    <Route element={<Home />} path="/ui-portfolio/" />
+                    <Route element={<Project1 />} path="/ui-portfolio/cal-chat"/>
+                    <Route element={<Project2 />} path="/ui-portfolio/coffee-redesign"/>
+                    <Route element={<Project3 />} path="/ui-portfolio/snapchat-feature"/>
                   </Routes>
                   </Container>
                 </Col>
@@ -104,28 +116,28 @@ function App() {
                       <Navbar.Brand><h2 style={{fontSize:"2em"}}><img style={{marginRight:"20px"}}src= {avatarsm} width="100px" alt="big tech style avatar" />Ángela George</h2></Navbar.Brand>
                       <Navbar.Toggle aria-controls="basic-navbar-nav" />
                       <Navbar.Collapse id="basic-navbar-nav" style={{paddingLeft:"5%"}}>
-                        <Nav className="me-auto">
+                        <Nav className="me-auto" onSelect={(k) => setKey(k)}>
                         <Nav.Item>
-                          <LinkContainer to="/">
-                            <Nav.Link eventKey="link-0">Home</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/">
+                            <Nav.Link eventKey="/ui-portfolio/">Home</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
                       
                         <Nav.Item>
-                          <LinkContainer to="/cal-chat">
-                            <Nav.Link eventKey="link-1">CalChat Mobile App</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/cal-chat">
+                            <Nav.Link eventKey="/ui-portfolio/cal-chat">CalChat Mobile App</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
-                          <LinkContainer to="/coffee-redesign">
-                            <Nav.Link eventKey="link-2">BlueNose Coffee Redesign</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/coffee-redesign">
+                            <Nav.Link eventKey="/ui-portfolio/coffee-redesign">BlueNose Coffee Redesign</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
 
                         <Nav.Item>
-                          <LinkContainer to="/snapchat-feature">
-                            <Nav.Link eventKey="link-3">Snapchat Feature Implementation</Nav.Link>
+                          <LinkContainer to="/ui-portfolio/snapchat-feature">
+                            <Nav.Link eventKey="/ui-portfolio/snapchat-feature">Snapchat Feature Implementation</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
                         </Nav>
@@ -133,11 +145,15 @@ function App() {
                     </Container>
                   </Navbar>
                   <Container >
-                  <Routes>
-                    <Route element={<Home />} path="/" />
-                    <Route element={<Project1 />} path="/cal-chat"/>
-                    <Route element={<Project2 />} path="/coffee-redesign"/>
-                    <Route element={<Project3 />} path="/snapchat-feature"/>
+                  <Routes basename="https://angelageorge.com">
+                    <Route
+                      path="/redirect"
+                      element={ <Navigate to="/ui-portfolio" /> }
+                    />
+                    <Route element={<Home />} path="/ui-portfolio/" />
+                    <Route element={<Project1 />} path="/ui-portfolio/cal-chat"/>
+                    <Route element={<Project2 />} path="/ui-portfolio/coffee-redesign"/>
+                    <Route element={<Project3 />} path="/ui-portfolio/snapchat-feature"/>
                   </Routes>
                   </Container>
                 </Col>
