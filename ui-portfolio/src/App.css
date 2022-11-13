@@ -158,3 +158,9 @@ link {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.figmaIFrame{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width:800;
+  height:450px;
+}
