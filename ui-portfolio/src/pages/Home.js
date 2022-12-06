@@ -20,8 +20,7 @@ function Home() {
             <Col lg={10}>
                 <Row style={{marginTop:"2%"}}>
                     <h2>Hola.</h2>
-                    <p>My name is Ángela, and I am a recent Gonzaga graduate looking to start a 
-                        career in UI/UX design. I am passionate about visual art and design but have
+                    <p>My name is Ángela, I am a recent Gonzaga graduate and aspiring UI/UX designer. I am passionate about visual art and design but have
                          always struggled to find an intersection between my creative and technical 
                          skills. After taking a UI/UX course during the last semester of my senior 
                          year, I realized it was where I wanted to be. Working in UI/UX would utilize

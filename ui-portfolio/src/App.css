@@ -161,6 +161,10 @@ link {
 
 .figmaIFrame{
   border: 1px solid rgba(0, 0, 0, 0.1);
-  width:800;
-  height:450px;
+  height:600px;
+}
+
+.figmaIFrame2{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height:600px;
 }
