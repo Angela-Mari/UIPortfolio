@@ -31,11 +31,12 @@ function Project1() {
                     <Col xs={12} md={4} style={{paddingTop:"0.5rem"}}>
                         <iframe 
                             title="CalChat Figma Mockup"
-                            className="figmaIFrame2"
+                            className="figmaIFrame"
                             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0hG1n4Yr2WnkmDq6vKJnBp%2FCalChat-Wireframes%3Fpage-id%3D89%253A393%26node-id%3D129%253A23%26viewport%3D455%252C542%252C0.29%26scaling%3Dscale-down%26starting-point-node-id%3D129%253A23" 
                             allowfullscreen>
                         </iframe>  
-                    </Col>      
+                    </Col> 
+                    <p><a href="https://www.figma.com/community/file/1184623446302040281">Full Figma Project File</a></p>     
                 </Row>
                 <Col>
                     

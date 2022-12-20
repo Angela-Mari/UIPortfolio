@@ -108,12 +108,25 @@ function App() {
                 <Row>
                 <Col>
                   
-                  <Row style={{marginTop:"4%"}}>
+                  {/* <Row style={{marginTop:"4%"}}>
                   
-                  </Row>
+                  </Row> */}
                   <Navbar bg="light" expand="xs">
                     <Container>
-                      <Navbar.Brand><h2 style={{fontSize:"2em"}}><img style={{marginRight:"20px"}}src= {avatarsm} width="100px" alt="big tech style avatar" />Ángela George</h2></Navbar.Brand>
+                      <Navbar.Brand>
+                        <Row >
+                          <Row className="justify-content-center" >
+                            <Col xs = {8} md = {4} className="text-center" style={{paddingLeft:"4rem"}}>
+                            <img style={{marginRight:"20px"}}src= {avatarsm} width="100px" alt="big tech style avatar" />
+                            </Col>
+                            <Col style={{paddingLeft:"3rem"}} className="text-center">
+                              <h2 style={{fontSize:"2em"}}>Ángela George</h2>
+                            </Col>
+                          </Row>
+                          
+                          
+                        </Row>
+                        </Navbar.Brand>
                       <Navbar.Toggle aria-controls="basic-navbar-nav" />
                       <Navbar.Collapse id="basic-navbar-nav" style={{paddingLeft:"5%"}}>
                         <Nav className="me-auto" onSelect={(k) => setKey(k)}>
