@@ -10,6 +10,12 @@
   height: 100px;
 }
 
+.block-quote {
+  font-size: 5em;
+  color: #E68BE1;
+  font-family: 'Gilda Display', serif;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }

@@ -80,9 +80,14 @@ function Project2({curPage, setCurPage}) {
                                design trends can lead to better usability, there is a question of did we lose brand identity.
                             </p>
                             <Row>
-                            <b>“</b>People think we are a corporate chain but we are a family-run local coffee shop.<b>”</b>
-                            -	Sarah, BlueNose Owner
+                                
+                            <Col xs={1}className="block-quote justify-content-end">“</Col><Col xs={10} className="align-items-center"><p>People think we are a corporate chain but we are a family-run 
+                                local coffee shop.</p></Col><Col xs={1} className="block-quote justify-content-start">”</Col>
                             </Row>
+                            <Row >
+                            <p style={{textAlign:"end"}}>-	Sarah, BlueNose Owner</p>
+                            </Row>
+                            
                             <p>
                             In my mockup for BlueNose which I know to be a warm, welcoming, and friendly coffee shop; I took a risk and designed it in the Neubrutalism style. This also distinguishes BlueNose as a local coffee shop. 
                             </p>
