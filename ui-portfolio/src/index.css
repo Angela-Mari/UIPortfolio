@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+}
+
+h2 {
+  font-family: 'Gilda Display', serif;
+  color: black;
+}
+
+h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px !important;
+}

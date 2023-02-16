@@ -1,13 +1,96 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Button } from 'react-bootstrap';
 import '../App.css';
+import { useEffect, useState } from 'react';
+import bluenoseHeader from '../assests/bluenoseheader.jpeg';
+import sipping from '../assests/sipping.jpeg';
 
-function Project2() {
+
+function Project2({curPage, setCurPage}) {
+
+    useEffect(() => {
+        setCurPage("project2")
+    }, []);
+
     return (
-        <Container style={{marginBottom:'1rem'}}>
-            <Row style={{marginTop:"2%"}}>
-                <Row >
+            <div>
+                <div style={{marginTop:"2%"}}>
+                    <div className='overlay-row'></div>
+                    <img src={bluenoseHeader} alt="Bluenose Coffee Interior" height="250px" style={{objectFit:"cover", marginBottom:'1rem', width:"2000px", marginLeft:"-1%"}}/>
+                    <h1 style={{position:"absolute", top: "50%", left: "50%", transform: "translate(-50%, -100%)", color:"white", fontWeight:"bold", textShadow:"black 1px 1px 10px", zIndex:"5"}}>BlueNose Coffee Redesign</h1>
+                </div>
+
+                <Container>
+                    <Row>
+                    <Col xs={4}>
+                    <h2>Case Study</h2>
+                    
+                    <p>Sarah is a local business owner in Farmington, MN who needs a website 
+                    to sell beans in bulk and advertise in-store craft beverages. By 
+                    partnering with other small businesses, through her wholesale beans 
+                    program, she can expand her business beyond regular in-store customers. 
+                    Her current site is professional but by using elements of <b>Neubrutalism</b>, I 
+                    created a mockup of her site that is fun and accessible to new customers, 
+                    walk-ins, and businesses alike.
+                    </p>
+                    <img width="400px" src={sipping} alt="Me sipping coffee" />
+                    </Col>
+                    <Col xs={8}>
+                        <div>
+                            <Button>Resume</Button>
+                            <Button>Latina Design Corner</Button>
+                            <Button>Art Potfolio</Button> 
+                        </div>
+                        <Row>
+                            <h2>Empathizing With the User</h2>
+                            <p>
+                            One of the main site features is a menu with current beverages 
+                            and snacks. The current site offers an image of the menu but I 
+                            wanted to create something that would be more responsive across 
+                            screen sizes as well as easier to update individual items. The site 
+                            also needed an injection of images to show off the great craftsmanship 
+                            of BlueNose baristas and pastry partners. 
+                            </p>
+                            <h3>Accessibility in Design</h3>
+                            <p>
+                            An important part of designing a website usable by all is to have a
+                            responsive design and text that can be translated into other languages. 
+                            With the menu now a responsive part of the website, and designed with 
+                            Gestalt principles in mind (proximity, similarity, and closure) more 
+                            users will be able to navigate the menu.
+                            </p>
+                            <h2>Neubrutalism Experiment</h2>
+                            <p>
+                            I am usually drawn to clean, minimalistic modern web designs that allow 
+                            the content to speak for itself. However, I have always admired sites where 
+                            their brand is present throughout every design choice across the site. With 
+                            the Neubrutalism design trend, I found a way to push myself to design outside 
+                            of my comfort zone. Redesigning the BlueNose Coffee site within the Neubrutalism 
+                            design patterns meant thinking about what pictures need to pop, how to arrange the 
+                            typography to maximize readability and quirkiness, and how will those design choices 
+                            translate across screens.
+                            </p>
+                            <p>
+                            Neubrutalism combines elements of brutalism (jarring or clashing colors and bold fonts)
+                             along with fun and maybe groovy shapes, patterns, and fonts. It is a break from the 
+                             minimalism trend in which sites have become almost indistinguishable from each other
+                              besides the logo and potentially one accent color. While minimalism and following common
+                               design trends can lead to better usability, there is a question of did we lose brand identity.
+                            </p>
+                            <Row>
+                            <b>“</b>People think we are a corporate chain but we are a family-run local coffee shop.<b>”</b>
+                            -	Sarah, BlueNose Owner
+                            </Row>
+                            <p>
+                            In my mockup for BlueNose which I know to be a warm, welcoming, and friendly coffee shop; I took a risk and designed it in the Neubrutalism style. This also distinguishes BlueNose as a local coffee shop. 
+                            </p>
+                        </Row>
+                    </Col>
+                    </Row>
+                </Container>
+                {/* <Row >
                     <h2>Redesinging a Website</h2>
                     <p>
                         BlueNose coffee is a local coffee shop in Farmington MN. I have been friends with the owner for some time now and she was genrous enough to let me practice mocking up a website using her buisness and brand. Inspired by the Neubrutalism style in web design, I sought to give BlueNose a new look geared towards a gen z audeince.
@@ -27,9 +110,8 @@ function Project2() {
                             </iframe>
                         </Col>
                     </Row>
-                </Col>
-            </Row>
-        </Container>
+                </Col> */}
+            </div>
     );
 }
 

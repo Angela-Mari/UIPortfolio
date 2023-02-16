@@ -5,6 +5,11 @@
   min-height: calc(100vh - 60px);
 }
 
+.top-nav {
+  background-color: black;
+  height: 100px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -12,19 +17,30 @@ body {
 .contain-me {
   overflow: hidden;
 }
-h1 {
-  font-family: 'Sansita', cursive;
-  font-size: 5em !important;
-  color: #3b395c;
+
+.nav-title {
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  font-size: 1.5em !important;
 }
 
-h2 {
-  font-family: 'Sansita', cursive;
-  color: #3b395c;
+.overlay-row{
+  background: rgba(230, 139, 225, 0.5);
+  overflow: hidden;
+  height: 250px;
+  width: 100vw;
+  z-index: 2;
+  position: absolute;
 }
 
-link {
-  color: #a2c4c2 !important;
+.top-nav-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.top-nav-link:hover {
+  color: white !important;
+  text-decoration: underline;
 }
 
 .card {
@@ -37,22 +53,14 @@ link {
   scale: 1.05;
 }
 
-.nav {
+.nav-two {
   padding-left: 20% !important;
   border-bottom: solid 1px #dee2e6 !important;
 }
 
-.nav-link{
-  color: #619390 !important;
-}
-
-.nav-link:focus{
-  color: #334e4c !important;
-}
-
 .footer{
   height:60px;
-  background-color:#a2c4c2;
+  background-color:black;
   position: relative;
   left: 0;
   bottom: 0;
@@ -60,11 +68,28 @@ link {
 
 .avatar {
   position: absolute;
-  left: 0px;
   top: 0px;
   z-index: 50;
   width: 20%;
 }
+
+.nav-tabs .nav-item .nav-link {
+  border-radius: 0;
+  color: black;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  border-radius: 0;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: black !important;
+  border-radius: 0 !important;
+  border-color: transparent !important;
+  width: 200px;
+  margin: 5px;
+}
+
 
 @media screen and (max-width: 1440px) {
   .avatar {
