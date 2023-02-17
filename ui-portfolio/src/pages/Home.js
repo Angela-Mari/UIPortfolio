@@ -4,13 +4,18 @@ import { useEffect, useState } from 'react';
 import home1 from '../assests/home1.jpeg';
 import home2 from '../assests/home2.jpeg';
 import home3 from '../assests/home3.jpeg';
+import { useLocation } from 'react-router-dom';
 
 
-function Home({curPage, setCurPage}) {
+function Home() {
+
+
+    let location = useLocation();
+    const [curPage, setCurPage] = useState("home")
 
     useEffect(() => {
-        setCurPage("home")
-    }, []);
+        setCurPage(location)
+    }, [location]);
 
     const [matches, setMatches] = useState(
         window.matchMedia("(min-width: 1399px)").matches
@@ -23,7 +28,7 @@ function Home({curPage, setCurPage}) {
       }, []);
 
       return (
-        <Container>
+        <Container style={{marginLeft:"20%"}}>
         <Row>
             <Col lg={10}>
                 <Row style={{marginTop:"2%"}}>

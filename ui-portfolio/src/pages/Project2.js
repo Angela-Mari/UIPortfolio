@@ -8,11 +8,7 @@ import bluenoseHeader from '../assests/bluenoseheader.jpeg';
 import sipping from '../assests/sipping.jpeg';
 
 
-function Project2({curPage, setCurPage}) {
-
-    useEffect(() => {
-        setCurPage("project2")
-    }, []);
+function Project2() {
 
     return (
             <div>
@@ -24,43 +20,54 @@ function Project2({curPage, setCurPage}) {
 
                 <Container>
                     <Row>
-                    <Col xs={4}>
+                    <Row>
                     <h2>Case Study</h2>
                     
                     <p>Sarah is a local business owner in Farmington, MN who needs a website 
-                    to sell beans in bulk and advertise in-store craft beverages. By 
-                    partnering with other small businesses, through her wholesale beans 
-                    program, she can expand her business beyond regular in-store customers. 
+                    to sell beans in bulk and advertise in-store craft beverages.
                     Her current site is professional but by using elements of <b>Neubrutalism</b>, I 
                     created a mockup of her site that is fun and accessible to new customers, 
                     walk-ins, and businesses alike.
                     </p>
-                    <img width="400px" src={sipping} alt="Me sipping coffee" />
-                    </Col>
-                    <Col xs={8}>
-                        <div>
-                            <Button>Resume</Button>
-                            <Button>Latina Design Corner</Button>
-                            <Button>Art Potfolio</Button> 
-                        </div>
-                        <Row>
-                            <h2>Empathizing With the User</h2>
-                            <p>
-                            One of the main site features is a menu with current beverages 
-                            and snacks. The current site offers an image of the menu but I 
-                            wanted to create something that would be more responsive across 
-                            screen sizes as well as easier to update individual items. The site 
-                            also needed an injection of images to show off the great craftsmanship 
-                            of BlueNose baristas and pastry partners. 
-                            </p>
-                            <h3>Accessibility in Design</h3>
-                            <p>
-                            An important part of designing a website usable by all is to have a
-                            responsive design and text that can be translated into other languages. 
-                            With the menu now a responsive part of the website, and designed with 
-                            Gestalt principles in mind (proximity, similarity, and closure) more 
-                            users will be able to navigate the menu.
-                            </p>
+                    </Row>
+                        <Col xs={4}>
+                        
+                        <Col className="text-center">
+                            <img src={sipping} alt="Me sipping coffee" style={{maxWidth:"400px"}}/>
+                            <div><i>Designing in Bluenose</i></div>
+                        </Col>
+                        </Col>
+                        <Col xs={8}>
+                            <div>
+                                <Button>Project Files</Button>
+                                <Button>Latina Design Corner</Button>
+                                <Button>Art Potfolio</Button> 
+                            </div>
+                            <Row>
+                                <h2>Empathizing With the User</h2>
+                                <p>
+                                One of the main site features is a menu with current beverages 
+                                and snacks. The current site offers an image of the menu but I 
+                                wanted to create something that would be more responsive across 
+                                screen sizes as well as easier to update individual items. The site 
+                                also needed an injection of images to show off the great craftsmanship 
+                                of BlueNose baristas and pastry partners. 
+                                </p>
+                                <h3>Accessibility in Design</h3>
+                                <p>
+                                An important part of designing a website usable by all is to have a
+                                responsive design and text that can be translated into other languages. 
+                                With the menu now a responsive part of the website, and designed with 
+                                Gestalt principles in mind (proximity, similarity, and closure) more 
+                                users will be able to navigate the menu.
+                                </p>
+                            </Row>
+                            
+                            
+                        </Col>
+                    </Row>
+                    <Row>
+                            <Col xs={8}>
                             <h2>Neubrutalism Experiment</h2>
                             <p>
                             I am usually drawn to clean, minimalistic modern web designs that allow 
@@ -72,28 +79,62 @@ function Project2({curPage, setCurPage}) {
                             typography to maximize readability and quirkiness, and how will those design choices 
                             translate across screens.
                             </p>
-                            <p>
-                            Neubrutalism combines elements of brutalism (jarring or clashing colors and bold fonts)
-                             along with fun and maybe groovy shapes, patterns, and fonts. It is a break from the 
-                             minimalism trend in which sites have become almost indistinguishable from each other
-                              besides the logo and potentially one accent color. While minimalism and following common
-                               design trends can lead to better usability, there is a question of did we lose brand identity.
-                            </p>
-                            <Row>
+                           
+                                        <p>
+                                    Neubrutalism combines elements of brutalism (jarring or clashing colors and bold fonts)
+                                    along with fun and maybe groovy shapes, patterns, and fonts. It is a break from the 
+                                    minimalism trend in which sites have become almost indistinguishable from each other
+                                    besides the logo and potentially one accent color. While minimalism and following common
+                                    design trends can lead to better usability, there is a question of did we lose brand identity.
+                                    </p>
                                 
-                            <Col xs={1}className="block-quote justify-content-end">“</Col><Col xs={10} className="align-items-center"><p>People think we are a corporate chain but we are a family-run 
-                                local coffee shop.</p></Col><Col xs={1} className="block-quote justify-content-start">”</Col>
-                            </Row>
-                            <Row >
-                            <p style={{textAlign:"end"}}>-	Sarah, BlueNose Owner</p>
-                            </Row>
                             
+                            <Row >
+                                
+                            <Col xs={1}className="block-quote text-end" style={{padding:"0px", textAlign:"end"}}>
+                                “
+                            </Col>
+                            <Col xs={9} className="h-25" style={{paddingTop:"25px", paddingRight:"0px", marginRight:"-30px"}}>
+                                
+                                <p>Customers think we are a corporate chain but we are a family-run local coffee shop.</p>
+                               
+                            </Col>
+                            <Col xs={1} className="block-quote text-start" style={{padding:"0px", textAlign:"end"}}>
+                                ”
+                            </Col>
+                            <Row >
+                                <Col xs={10}>
+                                    <p style={{textAlign:"end"}}><i>-	Sarah, BlueNose Owner</i></p>
+                                </Col>
+                            </Row>
+
+                           
+                            </Row>
                             <p>
                             In my mockup for BlueNose which I know to be a warm, welcoming, and friendly coffee shop; I took a risk and designed it in the Neubrutalism style. This also distinguishes BlueNose as a local coffee shop. 
                             </p>
+                           
+                            
+                            </Col>
+                            
+                            <Col xs ={4} className="text-center">
+                                <iframe className="neubru" width="400" height="350" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlJYHybwOOk9wBTTwAQCtV2%2FBlueNose-Coffee%3Fnode-id%3D152%253A2%26t%3DQfaKsV4TF2aJMbtW-1" allowfullscreen></iframe>
+                                <div style={{marginTop:"25px"}}><i>Figma Hi-Fi Mockup</i></div>
+                            </Col>
                         </Row>
-                    </Col>
-                    </Row>
+                        <Row  className="justify-content-end">
+                            <Col xs={2}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="206.167" viewBox="0 0 235.047 206.167">
+                                    <path id="Path_4" data-name="Path 4" d="M2605.724,2088.186s-7.347-76.746-65.18-70.752,65.18,158.359,65.18,158.359,157.141-120.2,108.085-128.935S2605.724,2088.186,2605.724,2088.186Z" transform="matrix(0.974, 0.225, -0.225, 0.974, -1967.704, -2530.407)" fill="#e68be1" stroke="#000" stroke-width="5"/>
+                                    </svg>
+                            </Col>
+                            <Col xs={3}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="175.483" viewBox="0 0 181.384 175.483">
+                                <path id="Path_2" data-name="Path 2" d="M2463.81,1902.16l-6.359-59.312,37.33,51.274,64.193-32.745-30.09,53.386,40.8,48.205-63.254-22.344-5.74,67.89-22.519-67.89-73.482-6.891Z" transform="translate(-2396.177 -1833.817)" fill="#e68be1" stroke="#000" stroke-width="5"/>
+                                </svg>
+                            </Col>
+                
+                            </Row>
                 </Container>
                 {/* <Row >
                     <h2>Redesinging a Website</h2>
