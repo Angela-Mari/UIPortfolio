@@ -9,30 +9,12 @@ import { useLocation } from 'react-router-dom';
 
 function Home() {
 
-
-    let location = useLocation();
-    const [curPage, setCurPage] = useState("home")
-
-    useEffect(() => {
-        setCurPage(location)
-    }, [location]);
-
-    const [matches, setMatches] = useState(
-        window.matchMedia("(min-width: 1399px)").matches
-      )
-    
-      useEffect(() => {
-        window
-        .matchMedia("(min-width: 1399px)")
-        .addEventListener('change', e => setMatches( e.matches ));
-      }, []);
-
       return (
-        <Container style={{marginLeft:"20%"}}>
+        <Container>
         <Row>
-            <Col lg={10}>
+            <Col lg={10} >
                 <Row style={{marginTop:"2%"}}>
-                    <Col>
+                    <Col style={{paddingLeft:"20%"}}> 
                     <h1>Hola Mundo</h1>
                     <p>My name is Ángela, I am a recent Gonzaga graduate and aspiring UI/UX designer. I am passionate about visual art and design but have
                          always struggled to find an intersection between my creative and technical 
@@ -42,14 +24,7 @@ function Home() {
                           toward the powerful mission of <b>making the world accessible and enjoyable 
                           for all.</b>
                     </p>
-                    <div style={{marginLeft:"-40%", marginTop:"10%"}}>
-                      
-                        <Button>Resume</Button>
-                       
-                        <Button>Latina Design Corner</Button>
-                        
-                        <Button>Art Potfolio</Button> 
-                    </div>
+                    
                 
                     </Col>
                     <Col className="text-center">
@@ -57,10 +32,17 @@ function Home() {
                         <div><i>Designer @ Work</i></div>
                     </Col>
                     
-                    
+                    <div>
+                      
+                      <Button>Resume</Button>
+                     
+                      <Button>Latina Design Corner</Button>
+                      
+                      <Button>Art Potfolio</Button> 
+                  </div>   
                 </Row>
-                <div style={{marginLeft:"-50%", marginRight:"-30%", marginTop:"2%", paddingBottom:"2%", backgroundColor: "#E68BE1"}}>
-                    <Col style={{marginLeft:"17%", paddingTop:"2%"}}>
+                <div style={{marginLeft:"-50%", marginRight:"-50%", marginTop:"2%", paddingBottom:"2%", backgroundColor: "#E68BE1"}}>
+                    <Col style={{marginLeft:"25%", paddingTop:"2%", marginRight:"15%"}}>
                     <h2>Creating This Space</h2>
                     <p>
                     After graduating, I realized I wanted to learn more about UI/UX Design. 
@@ -83,21 +65,21 @@ function Home() {
                     </h3>
                     </Col>
                 </div>
-                <Row style={{marginLeft:"-20%", marginTop:"-2%"}}>
-                    <Col className="text-center">
+                <Row style={{marginTop:"-2%"}}>
+                    <Col xs={4} className="text-center">
                         <img src={home2} alt="wireframe" width="350px"/>
                         <p><i>Paper Wireframe</i></p>
                     </Col>
-                    <Col className="text-center">
+                    <Col xs={4} className="text-center">
                         <img src={home3} alt="wireframe"width="350px"/>
                         <p><i>Lo-Fi Mockup</i></p>
                     </Col>
-                    <Col className="text-center">
+                    <Col xs={4} className="text-center">
                     <iframe width="500" height="250" src="https://xd.adobe.com/embed/ec86a22b-25c6-429f-929c-c56f5b17e9b0-b9d5/" frameborder="0" allowfullscreen></iframe>
                     <p><i>Adobe XD Hi-Fi Prototype</i></p>
                     </Col>
                 </Row>
-                <Row style={{marginLeft:"-21%"}}>
+                <Row style={{marginLeft:""}}>
                     <Col>
                         <h3>
                             Design Challenges

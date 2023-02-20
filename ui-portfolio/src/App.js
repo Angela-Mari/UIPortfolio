@@ -20,46 +20,32 @@ import linkedin from './assests/linkedIn-white.png';
 import spotify from './assests/spotify-white.png';
 import avatarsm from './assests/avatar-sm.png';
 import { useEffect, useState } from 'react';
+import LatinaDesignCorner from './pages/Latina-Design-Corner';
+import menu from "./assests/icons8-menu-rounded-50.png"
 
 function App() {
 
   const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 1030px)").matches
+    window.matchMedia("(min-width: 1199px)").matches
   )
 
   useEffect(() => {
     window
-    .matchMedia("(min-width: 1030px)")
+    .matchMedia("(min-width: 1199px)")
     .addEventListener('change', e => setMatches( e.matches ));
   }, []);
 
-  const [key, setKey] = useState("/ui-portfolio/");
-
-  //put in local storage
-  useEffect(() => {
-    console.log("put in local storage")
-    const getActiveTab = JSON.parse(localStorage.getItem("activeTab"));
-    
-    localStorage.setItem("activeTab", JSON.stringify(key));
-    console.log(key)
-    }, [key]);
-
-  //retreive from local storage
-  useEffect(() => {
-    console.log("retrevie from local storage")
-  const getActiveTab = JSON.parse(localStorage.getItem("activeTab"));
-  if (getActiveTab && getActiveTab !== key) {
-    setKey(getActiveTab);
-    console.log(key)
-    console.log("in use effect 1")
-  }
-  }, [key]);
+  const [key, setKey] = useState(window.location.pathname);
 
   return (
         <div className="contain-me">
         <Router>
           <div className='content-main'>
-          <Nav className="top-nav align-items-center" >
+         
+
+              { matches ? 
+              <Row>
+                 <Nav className="top-nav align-items-center" >
             <Col xs={4} ></Col>
             <Col xs={4} className="text-center">
               <h1 className='nav-title'>ANGELA GEORGE</h1>
@@ -91,11 +77,8 @@ function App() {
             </Col>
   
            </Nav>
-
-              { matches ? 
-              <Row>
                 <Col >
-                { key == "/ui-portfolio/" ||  key == "/ui-portfolio/home" ? <svg className="avatar" xmlns="http://www.w3.org/2000/svg" width="198.43" height="429.09" viewBox="0 0 248.25 536.816">
+                { key == "/ui-portfolio/" ||  key == "/ui-portfolio/home" || key == "/ui-portfolio/latina-design-corner" ? <svg className="avatar" xmlns="http://www.w3.org/2000/svg" width="198.43" height="429.09" viewBox="0 0 248.25 536.816">
                   <g id="Avatar" transform="translate(-59.646 558.288) rotate(-90)">
                     <path id="Path_9" data-name="Path 9" d="M311.994,157.451c-4.063,8.255-7.43,3.716-11.494,11.973-15.405-9.589-33.034-16.3-46.215-28.768-5.127-4.853,4.348-12.245,2.437-19.041,20.44-9.561,12.271-10.907,32.711-20.468,7.963,9.29,12.913,22.461,23.887,27.869,14.711,7.249,33.494,1.38,48.568,7.835,11.847,5.074,31.172,20.009,31.539,28.576s-21.14,22.239-30.327,20.718C312.252,177.729,325.238,168.432,311.994,157.451Z" transform="translate(155.489 27.902)" fill="#fac0a2"/>
                     <path id="Path_10" data-name="Path 10" d="M242.757,141.489s7.722,23.789,10.057,36.407-6.921,22.508-6.921,22.508-7.29,4.792-34.2-1.543-73.444-23.8-73.444-23.8-14.069-3.329-24.642-7.15-12.594-6.434-17.65-8.129a18.513,18.513,0,0,0-10.418.081L57.018,146.713l-16.109-5.186s-2.186-10.008,3.123-15.228,10.153-6.144,18.115-5.648,13.732,7.632,13.732,7.632l25.031,16.26,71.1,3.856s16.566-4.628,32.7-4.245S242.757,141.489,242.757,141.489Z" transform="translate(12.768 40.936)" fill="#d5977a"/>
@@ -151,12 +134,18 @@ function App() {
                             <Nav.Link eventKey="/ui-portfolio/snapchat-feature">Snapchat Feature Implementation</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
+                        <Nav.Item>
+                          <LinkContainer to="/ui-portfolio/latina-design-corner">
+                            <Nav.Link eventKey="/ui-portfolio/latina-design-corner">Latina Design Corner</Nav.Link>
+                          </LinkContainer>
+                        </Nav.Item>
                     </Nav> 
                   <Routes>
                     <Route element={<Home />} path="/ui-portfolio/" />
                     <Route element={<Project1 />} path="/ui-portfolio/cal-chat"/>
                     <Route element={<Project2 />} path="/ui-portfolio/coffee-redesign"/>
                     <Route element={<Project3 />} path="/ui-portfolio/snapchat-feature"/>
+                    <Route element={<LatinaDesignCorner />} path="/ui-portfolio/latina-design-corner"/>
                   </Routes>
                 </Col>
               </Row>
@@ -167,27 +156,28 @@ function App() {
                   {/* <Row style={{marginTop:"4%"}}>
                   
                   </Row> */}
-                  <Navbar bg="light" expand="xs">
+                  <Navbar expand="xs" className='top-nav-sm'>
                     <Container>
                      
                       <Navbar.Brand>
                         <Row >
                           <Row className="justify-content-center" >
-                            <Col xs = {8} md = {4} className="text-center" style={{paddingLeft:"4rem"}}>
-                            <img style={{marginRight:"20px"}}src= {avatarsm} width="100px" alt="big tech style avatar" />
-                            </Col>
-                            <Col style={{paddingLeft:"3rem"}} className="text-center">
-                              <h2 style={{fontSize:"2em"}}>Ángela George</h2>
-                            </Col>
+                            
+                          <Col >
+                            <h1 className='nav-title-sm'>ANGELA GEORGE</h1>
+                            <h1 className='nav-title-sm'>UI/UX PORTFOLIO</h1>
+                          </Col>
                           </Row>
                           
                           
                         </Row>
                         </Navbar.Brand>
-                      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                      <Navbar.Collapse id="basic-navbar-nav" style={{paddingLeft:"5%"}}>
+                      <Navbar.Toggle aria-controls="basic-navbar-nav">
+                        <img src={menu} width="30px" height="30px"/>
+                      </Navbar.Toggle>
+                      <Navbar.Collapse id="basic-navbar-nav" style={{paddingLeft:"5%", color:"white"}}>
                         <Nav className="me-auto" onSelect={(k) => setKey(k)}>
-                        <Nav.Item>
+                        <Nav.Item >
                           <LinkContainer to="/ui-portfolio/">
                             <Nav.Link eventKey="/ui-portfolio/">Home</Nav.Link>
                           </LinkContainer>

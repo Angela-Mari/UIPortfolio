@@ -30,17 +30,20 @@ function Project2() {
                     walk-ins, and businesses alike.
                     </p>
                     </Row>
-                        <Col xs={4}>
+                        <Col lg={4} md={3}>
                         
                         <Col className="text-center">
-                            <img src={sipping} alt="Me sipping coffee" style={{maxWidth:"400px"}}/>
+                            <img src={sipping} alt="Me sipping coffee" className="img-fluid"/>
                             <div><i>Designing in Bluenose</i></div>
                         </Col>
                         </Col>
-                        <Col xs={8}>
-                            <div>
+                        <Col lg={8} md={9}>
+                            <div class="hstack gap-3">
+                                
                                 <Button>Project Files</Button>
+                                
                                 <Button>Latina Design Corner</Button>
+                                
                                 <Button>Art Potfolio</Button> 
                             </div>
                             <Row>
@@ -67,7 +70,7 @@ function Project2() {
                         </Col>
                     </Row>
                     <Row>
-                            <Col xs={8}>
+                            <Col xs ={12} md={6} lg={8}>
                             <h2>Neubrutalism Experiment</h2>
                             <p>
                             I am usually drawn to clean, minimalistic modern web designs that allow 
@@ -80,13 +83,13 @@ function Project2() {
                             translate across screens.
                             </p>
                            
-                                        <p>
-                                    Neubrutalism combines elements of brutalism (jarring or clashing colors and bold fonts)
-                                    along with fun and maybe groovy shapes, patterns, and fonts. It is a break from the 
-                                    minimalism trend in which sites have become almost indistinguishable from each other
-                                    besides the logo and potentially one accent color. While minimalism and following common
-                                    design trends can lead to better usability, there is a question of did we lose brand identity.
-                                    </p>
+                            <p>
+                                Neubrutalism combines elements of brutalism (jarring or clashing colors and bold fonts)
+                                along with fun and maybe groovy shapes, patterns, and fonts. It is a break from the 
+                                minimalism trend in which sites have become almost indistinguishable from each other
+                                besides the logo and potentially one accent color. While minimalism and following common
+                                design trends can lead to better usability, there is a question of did we lose brand identity.
+                            </p>
                                 
                             
                             <Row >
@@ -117,18 +120,18 @@ function Project2() {
                             
                             </Col>
                             
-                            <Col xs ={4} className="text-center">
+                            <Col xs ={12} md ={6} lg={4} className="text-center">
                                 <iframe className="neubru" width="400" height="350" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlJYHybwOOk9wBTTwAQCtV2%2FBlueNose-Coffee%3Fnode-id%3D152%253A2%26t%3DQfaKsV4TF2aJMbtW-1" allowfullscreen></iframe>
                                 <div style={{marginTop:"25px"}}><i>Figma Hi-Fi Mockup</i></div>
                             </Col>
                         </Row>
                         <Row  className="justify-content-end">
-                            <Col xs={2}>
+                            <Col xs={12} md={6}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="150" height="206.167" viewBox="0 0 235.047 206.167">
                                     <path id="Path_4" data-name="Path 4" d="M2605.724,2088.186s-7.347-76.746-65.18-70.752,65.18,158.359,65.18,158.359,157.141-120.2,108.085-128.935S2605.724,2088.186,2605.724,2088.186Z" transform="matrix(0.974, 0.225, -0.225, 0.974, -1967.704, -2530.407)" fill="#e68be1" stroke="#000" stroke-width="5"/>
                                     </svg>
                             </Col>
-                            <Col xs={3}>
+                            <Col xs={12} md={6}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="150" height="175.483" viewBox="0 0 181.384 175.483">
                                 <path id="Path_2" data-name="Path 2" d="M2463.81,1902.16l-6.359-59.312,37.33,51.274,64.193-32.745-30.09,53.386,40.8,48.205-63.254-22.344-5.74,67.89-22.519-67.89-73.482-6.891Z" transform="translate(-2396.177 -1833.817)" fill="#e68be1" stroke="#000" stroke-width="5"/>
                                 </svg>

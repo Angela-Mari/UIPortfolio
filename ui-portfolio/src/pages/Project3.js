@@ -1,4 +1,4 @@
-import {Row, Col, Container, Button} from 'react-bootstrap';
+import {Row, Col, Container, Button, Carousel} from 'react-bootstrap';
 import chat from '../assests/Chat.png';
 import camera from '../assests/Camera.png';
 import bitmojiScreen from '../assests/bitmoji.png';
@@ -14,7 +14,7 @@ function Project3() {
     return (
         <Container style={{marginTop:"2%"}}>
             <Row>
-            <Col xs={6}>
+            <Col sm= {12} md={12} lg={6}>
                 <h1>Snapchat Reimagined</h1>
                 <p>
                 The problem with Snapchat's UI is that its use has evolved away from its design.
@@ -24,21 +24,56 @@ function Project3() {
                   the prototype, we push for recentering the user experience around the chat feature
                    and simplifying the app to its core features again. 
                 </p>
+                
                 <Row>
-                    <Col xs={4} className="text-center">
-                        <img src={camera} alt="camera view in Snapchat" className='snap-photos'/>
+                    <Col xs={4} className="text-center d-none d-md-block">
+                        <img src={camera} alt="camera view in Snapchat" className='snap-photos img-fluid'/>
                         <div><i>Camera</i></div>
 
                     </Col>
-                    <Col xs={4} className="text-center">
-                        <img src={chat} alt="chat view in Snapchat" className='snap-photos'/>
+                    <Col xs={4} className="text-center d-none d-md-block">
+                        <img src={chat} alt="chat view in Snapchat" className='snap-photos img-fluid'/>
                         <div><i>Home</i></div>
 
                     </Col>
-                    <Col xs={4} className="text-center">
-                        <img src={stories} alt="stories view in Snapchat" className='snap-photos'/>
-                        <div><i>Chat</i></div>
+                    <Col xs={4} className="text-center d-none d-md-block">
+                        <img src={stories} alt="stories view in Snapchat" className='snap-photos img-fluid'/>
+                        <div><i>Stories</i></div>
                     </Col>
+                </Row>
+                <Row className="d-md-none justify-content-center">
+                <Carousel style={{width:"250px", height:"390px", marginBottom:"10%"}} variant="dark">
+                    <Carousel.Item>
+                        <img
+                        className="snap-photos"
+                        src={camera}
+                        alt="camera view in Snapchat"
+                        />
+                        <Carousel.Caption>
+                        <h3>Camera</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="snap-photos"
+                        src={chat}
+                        alt="chat view in Snapchat"
+                        />
+                        <Carousel.Caption>
+                        <h3>Home</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="snap-photos"
+                        src={stories}
+                        alt="stories view in Snapchat"
+                        />
+                        <Carousel.Caption>
+                        <h3>Stories</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    </Carousel>
                 </Row>
                 <h2>Mindful Content</h2>
                 <p>
@@ -64,7 +99,7 @@ function Project3() {
                 </Col>
                 </Row>
             </Col>
-            <Col xs={6}>
+            <Col sm = {12} md={12} lg={6}>
             <div style={{marginTop:"2%"}}>
                 <Button>Latina Design Corner</Button>
                 <Button>Art Potfolio</Button> 
@@ -109,8 +144,11 @@ function Project3() {
                 <div><i>Profile V2</i></div>
             </Col>
             </Row>
-            <iframe className='figmaIFrame3' width="600px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPezKLgEffxykvubw1ONI2e%2FSnapchat-Prototype%3Fnode-id%3D0%253A1%26t%3DFKLijkhfM34x4fgL-1" allowfullscreen></iframe>
-           
+            <Row style={{padding:"10%"}}>
+                <div className='figma-container'>
+                    <iframe className='figmaIFrame3' src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPezKLgEffxykvubw1ONI2e%2FSnapchat-Prototype%3Fnode-id%3D0%253A1%26t%3DFKLijkhfM34x4fgL-1" allowfullscreen></iframe>
+                </div>
+                </Row>
             </Col>
             </Row>
         </Container>
