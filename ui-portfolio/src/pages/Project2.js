@@ -10,6 +10,16 @@ import sipping from '../assests/sipping.jpeg';
 
 function Project2() {
 
+    const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 992px)").matches
+      )
+    
+      useEffect(() => {
+        window
+        .matchMedia("(min-width: 992px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+      }, []);
+
     return (
             <div>
                 <div style={{marginTop:"2%"}}>
@@ -22,7 +32,6 @@ function Project2() {
                     <Row>
                     <Row>
                     <h2>Case Study</h2>
-                    
                     <p>Sarah is a local business owner in Farmington, MN who needs a website 
                     to sell beans in bulk and advertise in-store craft beverages.
                     Her current site is professional but by using elements of <b>Neubrutalism</b>, I 
@@ -30,22 +39,34 @@ function Project2() {
                     walk-ins, and businesses alike.
                     </p>
                     </Row>
-                        <Col lg={4} md={3}>
+                    <Row>
+
+                    </Row>
+                    <Row>
+                        <Col lg={4} md={3} className="text-center" style={matches? {}: {display:"none"}}>
                         
-                        <Col className="text-center">
-                            <img src={sipping} alt="Me sipping coffee" className="img-fluid"/>
+                            <img src={sipping} alt="Me sipping coffee" className="img-fluid" />
                             <div><i>Designing in Bluenose</i></div>
                         </Col>
-                        </Col>
                         <Col lg={8} md={9}>
-                            <div class="hstack gap-3">
-                                
-                                <Button>Project Files</Button>
-                                
-                                <Button>Latina Design Corner</Button>
-                                
-                                <Button>Art Potfolio</Button> 
-                            </div>
+                            <Row className="justify-content-center">
+                                <Col lg={6} md={6} xs ={6} className="text-center" style={matches? {display:"none"}: {}}>
+                            
+                                    <img src={sipping} alt="Me sipping coffee" className="img-fluid" />
+                                    <div><i>Designing in Bluenose</i></div>
+                                </Col>
+                                <Col>
+                                <div className={matches? "hstack gap-3" : "vstack gap3 align-items-center"} >
+                                    
+                                    <Button>Project Files</Button>
+                                    
+                                    <Button>Latina Design Corner</Button>
+                                    
+                                    <Button>Art Potfolio</Button> 
+                                </div>
+                                </Col>
+                            </Row>
+                            
                             <Row>
                                 <h2>Empathizing With the User</h2>
                                 <p>
@@ -65,6 +86,10 @@ function Project2() {
                                 users will be able to navigate the menu.
                                 </p>
                             </Row>
+                        </Col>
+                        </Row>
+                        <Col>
+                            
                             
                             
                         </Col>
@@ -102,7 +127,7 @@ function Project2() {
                                 <p>Customers think we are a corporate chain but we are a family-run local coffee shop.</p>
                                
                             </Col>
-                            <Col xs={1} className="block-quote text-start" style={{padding:"0px", textAlign:"end"}}>
+                            <Col xs={1} className="block-quote text-start" style={matches? {padding:"0px", textAlign:"end"}: {paddingLeft:"25px", textAlign:"end"}}>
                                 ”
                             </Col>
                             <Row >
@@ -121,7 +146,7 @@ function Project2() {
                             </Col>
                             
                             <Col xs ={12} md ={6} lg={4} className="text-center">
-                                <iframe className="neubru" width="400" height="350" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlJYHybwOOk9wBTTwAQCtV2%2FBlueNose-Coffee%3Fnode-id%3D152%253A2%26t%3DQfaKsV4TF2aJMbtW-1" allowfullscreen></iframe>
+                                <iframe className="neubru" height="300px"src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlJYHybwOOk9wBTTwAQCtV2%2FBlueNose-Coffee%3Fnode-id%3D152%253A2%26t%3DQfaKsV4TF2aJMbtW-1" allowfullscreen></iframe>
                                 <div style={{marginTop:"25px"}}><i>Figma Hi-Fi Mockup</i></div>
                             </Col>
                         </Row>

@@ -75,7 +75,7 @@ function Project3() {
                     </Carousel.Item>
                     </Carousel>
                 </Row>
-                <h2>Mindful Content</h2>
+                <h2 style={{marginTop:"2%"}}>Mindful Content</h2>
                 <p>
                 The reasoning behind redesigning the story page was to prioritize the relevancy of content 
                 to the user. Many users continue to use Snapchat solely for the story feature however this 
@@ -85,7 +85,7 @@ function Project3() {
                 bombarded with ads. 
                 </p>
                 <Row>
-                <Col xs={8}>
+                <Col xs={12} sm={8} md={8}>
                 <p>
                 In an age where users are begging social media giants to revert to simpler times, 
                 (think Kim K, Make Instagram Instagram again) Snapchat should be thinking about what 
@@ -94,8 +94,8 @@ function Project3() {
                 has shifted away from building communities to growing profits.
                 </p>
                 </Col>
-                <Col xs={4}>
-                    <img src={bitmojiPhone} alt="bored bitmoji looking at phone" width="200px" />
+                <Col xs={12} sm ={4} md={4}>
+                    <img src={bitmojiPhone} alt="bored bitmoji looking at phone" width="150px" />
                 </Col>
                 </Row>
             </Col>
@@ -106,7 +106,7 @@ function Project3() {
             </div>
             <h2>Iterating on Feedback</h2>
             <Row>
-            <Col xs={10}>
+            <Col xs={8} sm={10}>
             <p>
             After presenting the redesign to our class, new issues were revealed with the usability 
             of our mockup. Buttons were too small and key features were still buried. Using this 
@@ -114,12 +114,12 @@ function Project3() {
             and more usable.  
             </p>
             </Col>
-            <Col xs={2}>
+            <Col xs={4} sm={2}>
             <img src={bitmojiLean} alt="gesturing bitmoji" width="200px" style={{marginLeft:"-50px", marginTop:"-100px"}}/>
             </Col>
             </Row>
             <Row>
-            <Col xs={8}>
+            <Col sm={8}>
             <p>
             In V2 of the Snapchat redesign, the focus is still on chats but issues of privacy are 
             better addressed. In the original research, users were concerned with the public nature 
@@ -139,7 +139,7 @@ function Project3() {
 
             </p>
             </Col>
-            <Col xs={4} className="text-center">
+            <Col sm={4} className="text-center">
                 <img src={bitmojiScreen} alt="bitmoji view in Snapchat" className='snap-photos'/>
                 <div><i>Profile V2</i></div>
             </Col>

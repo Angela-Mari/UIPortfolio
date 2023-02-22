@@ -151,10 +151,10 @@
   }
 
   .blue-nose-title {
-    position:absolute;
-    top:90%;
-    left: 50%;
-    transform: translate(-50%, -100%);
+    position:relative;
+    margin-top:-150px;
+    margin-bottom:150px;
+    text-align: center;
     color:white;
     font-weight:bold;
     text-shadow:black 1px 1px 10px;
@@ -185,10 +185,9 @@
 
   .blue-nose-title {
     position:relative;
-    margin-top:-90px;
-    margin-bottom: 90px;
+    margin-top:-150px;
+    margin-bottom: 150px;
     text-align: center;
-    transform: translate(-50%, -100%);
     color:white;
     font-weight:bold;
     text-shadow:black 1px 1px 10px;
@@ -207,10 +206,9 @@
 
   .blue-nose-title {
     position:relative;
-    margin-top:-90px;
-    margin-bottom: 90px;
+    margin-top:-150px;
+    margin-bottom: 150px;
     text-align: center;
-    transform: translate(-50%, -100%);
     color:white;
     font-weight:bold;
     text-shadow:black 1px 1px 10px;
