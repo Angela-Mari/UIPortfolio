@@ -15,7 +15,7 @@ function Project2() {
                 <div style={{marginTop:"2%"}}>
                     <div className='overlay-row'></div>
                     <img src={bluenoseHeader} alt="Bluenose Coffee Interior" height="250px" style={{objectFit:"cover", marginBottom:'1rem', width:"2000px", marginLeft:"-1%"}}/>
-                    <h1 style={{position:"absolute", top: "50%", left: "50%", transform: "translate(-50%, -100%)", color:"white", fontWeight:"bold", textShadow:"black 1px 1px 10px", zIndex:"5"}}>BlueNose Coffee Redesign</h1>
+                    <h1 className='blue-nose-title'>BlueNose Coffee Redesign</h1>
                 </div>
 
                 <Container>

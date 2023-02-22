@@ -200,6 +200,11 @@ function App() {
                             <Nav.Link eventKey="/ui-portfolio/snapchat-feature">Snapchat Feature Implementation</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
+                        <Nav.Item>
+                          <LinkContainer to="/ui-portfolio/latina-design-corner">
+                            <Nav.Link eventKey="/ui-portfolio/latina-design-corner">Latina Design Corner</Nav.Link>
+                          </LinkContainer>
+                        </Nav.Item>
                         </Nav>
                       </Navbar.Collapse>
                     </Container>
@@ -214,6 +219,7 @@ function App() {
                     <Route element={<Project1 />} path="/ui-portfolio/cal-chat"/>
                     <Route element={<Project2 />} path="/ui-portfolio/coffee-redesign"/>
                     <Route element={<Project3 />} path="/ui-portfolio/snapchat-feature"/>
+                    <Route element={<LatinaDesignCorner />} path="/ui-portfolio/latina-design-corner"/>
                   </Routes>
                   </div>
                 </Col>
