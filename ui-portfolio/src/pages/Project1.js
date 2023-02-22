@@ -7,6 +7,16 @@ import { useEffect, useState } from 'react';
 
 function Project1() {
 
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 1199px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(min-width: 1199px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
+
     const [activeSlide, setActiveSlide] = useState(1);
 
     useEffect(() => {
@@ -60,7 +70,7 @@ function Project1() {
         <Row style={{marginTop:"2%"}}>
             <Col lg={10}>
                 <Row >
-                    <Col xs={10}>
+                    <Col xs ={12} sm={5} md={8} lg={10}>
                     
                     <h1>CalChat App Concept</h1>
                     <p>
@@ -75,14 +85,26 @@ function Project1() {
                     journeys, the research identified gaps in the market where many users could benefit 
                     from a tool like this across age, gender, and technological literacy.
                     </p>
-                    <div style={{marginBottom:"10px"}}>
+                    <div style={{marginBottom:"10px"}} className={matches? "hstack gap-3" : "vstack gap3 align-items-center"}>
                         <Button>Resume</Button>
                        
                         <Button>Latina Design Corner</Button>
                         
                         <Button>Art Potfolio</Button> 
                     </div>
-                    <h2>Pain Points</h2>
+                    
+                    </Col>
+                    <Col xs={12} sm={7} md={4} lg={2} className={matches? "" : "text-center"}>
+                    <iframe 
+                            title="CalChat Figma Mockup"
+                            className="figmaIFrame"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0hG1n4Yr2WnkmDq6vKJnBp%2FCalChat-Wireframes%3Fpage-id%3D89%253A393%26node-id%3D129%253A23%26viewport%3D455%252C542%252C0.29%26scaling%3Dscale-down%26starting-point-node-id%3D129%253A23" 
+                            allowfullscreen>
+                        </iframe>  
+                    </Col>
+                    <Col>
+                    <Row>
+                    <h2 style={matches? {} : {marginTop:"5%", marginBottom:"-5%"}}>Pain Points</h2>
                     <Row>
                     <ul className="carousel__list">
         {reviews.map((review, index) => {
@@ -136,12 +158,14 @@ function Project1() {
         </li>
       </ul>
                     </Row>
+                    </Row>
+                    <Row>
                     <h2 style={{marginTop:"2%", marginBottom:"2%"}}>Wirframes & Mockups</h2>
                     <Row >
-                        <Col xs={3}>
+                        <Col xs={6} sm={5} md={3}>
                             <img src = {rendering} alt="3d rendering of CalChat" style={{maxWidth:"300px"}} />
                         </Col>
-                        <Col xs={9}>
+                        <Col xs={6} sm={7} md={9}>
                             <p>
                             Some pain points that came out of the UX research were that large group chats are hard to manage, 
                             it is hard to find out friends' schedules, it is difficult to get input from everyone when planning 
@@ -164,14 +188,7 @@ function Project1() {
                             </p>
                         </Col>
                     </Row>
-                    </Col>
-                    <Col xs={2}>
-                    <iframe 
-                            title="CalChat Figma Mockup"
-                            className="figmaIFrame"
-                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0hG1n4Yr2WnkmDq6vKJnBp%2FCalChat-Wireframes%3Fpage-id%3D89%253A393%26node-id%3D129%253A23%26viewport%3D455%252C542%252C0.29%26scaling%3Dscale-down%26starting-point-node-id%3D129%253A23" 
-                            allowfullscreen>
-                        </iframe>  
+                    </Row>
                     </Col>
                 </Row>
                
