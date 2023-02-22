@@ -9,12 +9,22 @@ import { useLocation } from 'react-router-dom';
 
 function Home() {
 
+    const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 1199px)").matches
+      )
+    
+      useEffect(() => {
+        window
+        .matchMedia("(min-width: 1199px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+      }, []);
+
       return (
         <Container>
         <Row>
-            <Col lg={10} >
+            <Col >
                 <Row style={{marginTop:"2%"}}>
-                    <Col style={{paddingLeft:"20%"}}> 
+                    <Col style={matches? {paddingLeft:"20%"}: {}} xl={9} lg={6} md={6}> 
                     <h1>Hola Mundo</h1>
                     <p>My name is Ángela, I am a recent Gonzaga graduate and aspiring UI/UX designer. I am passionate about visual art and design but have
                          always struggled to find an intersection between my creative and technical 
@@ -24,15 +34,7 @@ function Home() {
                           toward the powerful mission of <b>making the world accessible and enjoyable 
                           for all.</b>
                     </p>
-                    
-                
-                    </Col>
-                    <Col className="text-center">
-                        <img src={home1} width="400px" height="300px" style={{objectFit:"cover"}} alt="designer @ work"/>
-                        <div><i>Designer @ Work</i></div>
-                    </Col>
-                    
-                    <div>
+                    <div style={matches? {} : {display:"none"}} >
                       
                       <Button>Resume</Button>
                      
@@ -40,9 +42,25 @@ function Home() {
                       
                       <Button>Art Potfolio</Button> 
                   </div>   
+                
+                    </Col>
+                    <Col className="text-center" xl={3} lg={6} md={6}>
+                        <img src={home1} className="img-fluid" style={{objectFit:"cover", minHeight:"300px"}} alt="designer @ work"/>
+                        <div><i>Designer @ Work</i></div>
+                    </Col>
+                    
+                    
                 </Row>
+                <div style={matches? {display:"none"} : {}} >
+                      
+                      <Button>Resume</Button>
+                     
+                      <Button>Latina Design Corner</Button>
+                      
+                      <Button>Art Potfolio</Button> 
+                  </div> 
                 <div style={{marginLeft:"-50%", marginRight:"-50%", marginTop:"2%", paddingBottom:"2%", backgroundColor: "#E68BE1"}}>
-                    <Col style={{marginLeft:"25%", paddingTop:"2%", marginRight:"15%"}}>
+                    <Col style={{marginLeft:"25%", paddingTop:"2%", marginRight:"25%"}}>
                     <h2>Creating This Space</h2>
                     <p>
                     After graduating, I realized I wanted to learn more about UI/UX Design. 
@@ -66,16 +84,16 @@ function Home() {
                     </Col>
                 </div>
                 <Row style={{marginTop:"-2%"}}>
-                    <Col xs={4} className="text-center">
-                        <img src={home2} alt="wireframe" width="350px"/>
+                    <Col sm ={12} lg={4} className="text-center">
+                        <img src={home2} alt="wireframe" style={{minHeight:"150px", maxWidth:"300px"}} className='img-fluid' />
                         <p><i>Paper Wireframe</i></p>
                     </Col>
-                    <Col xs={4} className="text-center">
-                        <img src={home3} alt="wireframe"width="350px"/>
+                    <Col sm ={12} lg={4} className="text-center">
+                        <img src={home3} alt="wireframe" style={{minHeight:"150px",  maxWidth:"300px"}} className='img-fluid'/>
                         <p><i>Lo-Fi Mockup</i></p>
                     </Col>
-                    <Col xs={4} className="text-center">
-                    <iframe width="500" height="250" src="https://xd.adobe.com/embed/ec86a22b-25c6-429f-929c-c56f5b17e9b0-b9d5/" frameborder="0" allowfullscreen></iframe>
+                    <Col sm ={12} lg={4} className="text-center">
+                    <iframe className='img-fluid' src="https://xd.adobe.com/embed/ec86a22b-25c6-429f-929c-c56f5b17e9b0-b9d5/" frameborder="0" allowfullscreen></iframe>
                     <p><i>Adobe XD Hi-Fi Prototype</i></p>
                     </Col>
                 </Row>
@@ -93,7 +111,7 @@ function Home() {
                          events. With this use case in mind, it is more and more likely a 
                          professional site like this would be viewed on a phone.  
                         </p>
-                        <div >
+                        <div className='text-center'>
                       
                         <Button>Course Notes</Button>
                        
