@@ -124,6 +124,7 @@
   height: 50px;
   margin: 10px 10px 10px 0px;
   padding: 0;
+  line-height: 50px;
 }
 
 .btn-primary:hover {
