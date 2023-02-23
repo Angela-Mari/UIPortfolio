@@ -161,24 +161,25 @@ function Project1() {
                     <Row>
                     <h2 style={{marginTop:"2%", marginBottom:"2%"}}>Wirframes & Mockups</h2>
                     <Row >
-                        <Col xs={{ span: 12, order: 2 }} sm={6} md={3}>
+                        <Col xs={{ span: 12, order: 2 }} sm={{ span: 6, order: 1 }} md={{ span: 3, order: 1 }}>
                             <img src = {rendering} alt="3d rendering of CalChat" style={{maxWidth:"300px"}} />
                         </Col>
-                        <Col xs={{ span: 12, order: 1 }} sm={6} md={9}>
+                        <Col xs={{ span: 12, order: 1 }} sm={{ span: 6, order: 2}} md={{ span: 9, order: 2 }}>
                             <p>
                             Some pain points that came out of the UX research were that large group chats are hard to manage, 
                             it is hard to find out friends' schedules, it is difficult to get input from everyone when planning 
                             an event, and anything beyond a group text seems over the top. To address these issues, Calendar Chat 
                             is oriented toward creating events with a variety of guests involved all while having a single source of truth for the event.
                             </p>
-                        </Col>
-                    </Row>
-                    <Row>
-                    <p>
+                            <p>
                             Having an event in Calendar Chat means a central place to store and comment on event details as well as a 
                             place to add photos after it is over. This photo album feature was further developed after the initial lo-fi 
                             prototype was reviewed in a usability study. 
                             </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                            
                             <h3>
                             Diversity in Design
                             </h3>

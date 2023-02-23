@@ -50,14 +50,6 @@
   color: white !important;
 }
 
-.short-excerpt{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 50px;
-}
-
-
-
 .overlay-row{
   background: rgba(230, 139, 225, 0.5);
   overflow: hidden;
@@ -75,16 +67,6 @@
 .top-nav-link:hover {
   color: white !important;
   text-decoration: underline;
-}
-
-.card {
-  margin: 10px;
-  border: 0px !important;
-  box-shadow: 10px 10px 20px whitesmoke !important;
-}
-
-.card-home:hover{
-  scale: 1.05;
 }
 
 .nav-two {
@@ -116,7 +98,7 @@
   border-radius: 0;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.btn-primary, .btn-primary:active, .btn-primary:visited {
   background-color: black !important;
   border-radius: 0 !important;
   border-color: transparent !important;
@@ -124,7 +106,7 @@
   height: 50px;
   margin: 10px 10px 10px 0px;
   padding: 0;
-  line-height: 50px;
+  line-height: 30px !important;
 }
 
 .btn-primary:hover {
@@ -134,7 +116,7 @@
 
 
 
-@media screen and (max-width: 1440px) {
+
   .avatar {
     position: absolute;
     left: 15px;
@@ -162,7 +144,7 @@
     background-repeat: no-repeat;
   }
 
-}
+
 
 @media screen and (max-width: 1340px) {
   .avatar {
@@ -194,6 +176,14 @@
     text-shadow:black 1px 1px 10px;
     z-index:5;
   }
+
+  .latina-design {
+    background-image: url('./assests/latina-design.svg');
+    background-attachment:scroll;
+    background-position: 75% 85%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -220,20 +210,11 @@
     background-image: url('./assests/latina-design.svg');
     background-attachment:scroll;
     background-position: 75% 85%;
-    background-size: 200%;
+    background-size: 300%;
     background-repeat: no-repeat;
   }
 }
 
-@media screen and (max-width: 775px) {
-  .latina-design {
-    background-image: url('./assests/latina-design.svg');
-    background-attachment:scroll;
-    background-position: 75% 85%;
-    background-size: 400%;
-    background-repeat: no-repeat;
-  }
-}
 
 @media screen and (max-width: 775px) {
   .latina-design {
@@ -252,16 +233,6 @@
 
 .card-link:hover{
   color: black;
-}
-
-.phone-resource {
-  margin: 10px;
-  max-height:250px;
-  border-radius: 25px 25px 0px 0px;
-  border-width: 0 !important;
-  background: whitesmoke;
-  box-shadow: 10px 10px 20px whitesmoke !important;
-  object-fit: cover;
 }
 
 .canva-div {

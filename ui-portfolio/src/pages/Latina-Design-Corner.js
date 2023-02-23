@@ -21,10 +21,10 @@ function LatinaDesignCorner() {
         <div className="latina-design" style={{marginBottom:"-20vh"}}>
          <Container>
             <Row>
-                <Row style={{marginTop:"2%", paddingLeft:"15%"}}>
+                <Row style={{marginTop:"2%", paddingLeft:"15%", marginBottom:"20%", paddingBottom:"20%"}}>
+                
+                <Col xs={12} sm ={12} md ={12} lg ={10} style={{backgroundColor:"white"}}>
                 <h1>Latina Design Corner</h1>
-                <Col xs={12} sm ={12} md ={12} lg ={9}>
-                    
                     <p>
                     The goal of this page is to be a community space for building knowledge, 
                     resources, and sharing experiences. When creating this portfolio, I wanted 
@@ -37,24 +37,11 @@ function LatinaDesignCorner() {
                     accessible internet for all. So please, read a story, use the links, and 
                     submit your ideas to make this space even better.  
                     </p>
-
-                    <h2>Resources</h2>
-                    <p>
-                    This is a running list of Job Boards, Networking Events, and Educational Content deemed helpful by the community.
-                    </p>
-                    <p>
-                    <a href="https://latinasintech.org/lit-recruit/">Latinas In Tech - Job Board</a>
-                    </p>
-                    <p>
-                    <a href="https://www.latinxswhodesign.com/">Latinx Designers - Contact List</a>
-                    </p>
-                    <p>
-                    <a href="https://open.spotify.com/show/3Ayn0VL4f9ZwR1GZ45XXL2?si=db7b19e0421f4fc7">A Hoe and a House Wife - Chicana Podcast</a>
-                    </p>
+                    <Row>
                     <h2>Stories</h2>
                     <Row>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
-                            <img src={loteria} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"350px"}} alt="blog post cover"></img>
+                            <img src={loteria} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
                             <h3>Finishing the Google UI/UX Certificate</h3>
                             <p >
                                 {
@@ -71,8 +58,8 @@ function LatinaDesignCorner() {
                             <a href="https://angelageorge.com/coming-soon/">Read More →</a>
                         </Col>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
-                            <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"150px"}} alt="blog post cover"></img>
-                            <h3>Being a Latina in STEM: Postgrad Reflection</h3>
+                            <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
+                            <h3>Latina CS Major: Postgrad Reflection</h3>
                             <p>
                             {
                             
@@ -87,7 +74,7 @@ function LatinaDesignCorner() {
                         <Col xs={12} sm ={12}  md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
 
                             
-                            <img src={market} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"150px"}} alt="blog post cover"></img>
+                            <img src={market} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
                             <h3>Talking with a Target UI/UX Designer</h3>
                             <p>
                             {
@@ -100,12 +87,28 @@ function LatinaDesignCorner() {
                             </p>
                             <a href="https://angelageorge.com/coming-soon/">Read More →</a>
                         </Col>
+                        </Row>
                     </Row>
-                    <Row style={{marginBottom:"20%", paddingBottom:"20%"}}>
+                    <Row >
                       <div>
                       <Button href="https://angelageorge.com/contact-me/">Submit a Story</Button>
                       </div>
-                  </Row> 
+                    </Row> 
+                    <h2>Resources</h2>
+                    <p>
+                    This is a running list of Job Boards, Networking Events, and Educational Content deemed helpful by the community.
+                    </p>
+                    <p>
+                    <a href="https://latinasintech.org/lit-recruit/">Latinas In Tech - Job Board</a>
+                    </p>
+                    <p>
+                    <a href="https://www.latinxswhodesign.com/">Latinx Designers - Contact List</a>
+                    </p>
+                    <p>
+                    <a href="https://open.spotify.com/show/3Ayn0VL4f9ZwR1GZ45XXL2?si=db7b19e0421f4fc7">A Hoe and a House Wife - Chicana Podcast</a>
+                    </p>
+                    
+                    
                 </Col>
                 </Row>
                  
