@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import '../App.css';
 import { useEffect, useState } from 'react';
 import bluenoseHeader from '../assests/bluenoseheader.jpeg';
@@ -58,11 +58,11 @@ function Project2() {
                                 <Col>
                                 <div className={matches? "hstack gap-3" : "vstack gap3 align-items-center"} >
                                     
-                                    <Button>Project Files</Button>
+                                    <Button href="https://www.figma.com/file/lJYHybwOOk9wBTTwAQCtV2/BlueNose-Coffee?t=KoyXGG3sjO6FyP0Y-1">Figma Files</Button>
                                     
-                                    <Button>Latina Design Corner</Button>
+                                    <Button href="https://www.bluenosecoffee.com/">Live Site</Button>
                                     
-                                    <Button>Art Potfolio</Button> 
+                                    <Button href="https://angelageorge.com/coloring-page-freelance-projects/">Past Collabs</Button> 
                                 </div>
                                 </Col>
                             </Row>
@@ -146,7 +146,7 @@ function Project2() {
                             </Col>
                             
                             <Col xs ={12} md ={6} lg={4} className="text-center">
-                                <iframe className="neubru" height="300px"src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlJYHybwOOk9wBTTwAQCtV2%2FBlueNose-Coffee%3Fnode-id%3D152%253A2%26t%3DQfaKsV4TF2aJMbtW-1" allowfullscreen></iframe>
+                                <iframe title="Figma BlueNose" className="neubru" height="300px"src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlJYHybwOOk9wBTTwAQCtV2%2FBlueNose-Coffee%3Fnode-id%3D152%253A2%26t%3DQfaKsV4TF2aJMbtW-1" allowfullscreen></iframe>
                                 <div style={{marginTop:"25px"}}><i>Figma Hi-Fi Mockup</i></div>
                             </Col>
                         </Row>

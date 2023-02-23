@@ -1,5 +1,4 @@
 import {Row, Col, Container, Button} from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
 import rendering from '../assests/Mockup.png';
 import { useEffect, useState } from 'react';
 
@@ -86,11 +85,11 @@ function Project1() {
                     from a tool like this across age, gender, and technological literacy.
                     </p>
                     <div style={{marginBottom:"10px"}} className={matches? "hstack gap-3" : "vstack gap3 align-items-center"}>
-                        <Button>Resume</Button>
+                        <Button href="https://www.figma.com/file/0hG1n4Yr2WnkmDq6vKJnBp/CalChat?t=KoyXGG3sjO6FyP0Y-1">Figma Files</Button>
                        
-                        <Button>Latina Design Corner</Button>
+                        <Button href="https://docs.google.com/presentation/d/13X051qTF6U4RV61mtPoP4w5cfUIOpSCWwthecNNoONA/edit?usp=sharing">User Journeys</Button>
                         
-                        <Button>Art Potfolio</Button> 
+                        <Button href="https://docs.google.com/presentation/d/1vPOzaZfSDouvWlOsFbNnwcQedYq9KIL96J28ytRZMuI/edit?usp=sharing">Personas</Button> 
                     </div>
                     
                     </Col>
@@ -162,17 +161,20 @@ function Project1() {
                     <Row>
                     <h2 style={{marginTop:"2%", marginBottom:"2%"}}>Wirframes & Mockups</h2>
                     <Row >
-                        <Col xs={6} sm={5} md={3}>
+                        <Col xs={{ span: 12, order: 2 }} sm={6} md={3}>
                             <img src = {rendering} alt="3d rendering of CalChat" style={{maxWidth:"300px"}} />
                         </Col>
-                        <Col xs={6} sm={7} md={9}>
+                        <Col xs={{ span: 12, order: 1 }} sm={6} md={9}>
                             <p>
                             Some pain points that came out of the UX research were that large group chats are hard to manage, 
                             it is hard to find out friends' schedules, it is difficult to get input from everyone when planning 
                             an event, and anything beyond a group text seems over the top. To address these issues, Calendar Chat 
                             is oriented toward creating events with a variety of guests involved all while having a single source of truth for the event.
                             </p>
-                            <p>
+                        </Col>
+                    </Row>
+                    <Row>
+                    <p>
                             Having an event in Calendar Chat means a central place to store and comment on event details as well as a 
                             place to add photos after it is over. This photo album feature was further developed after the initial lo-fi 
                             prototype was reviewed in a usability study. 
@@ -186,7 +188,6 @@ function Project1() {
                             science internship, I was the only woman on my team. Diversity in the tech field is a systemic issue but we can be 
                             proactive. I know that by designing for myself and a diverse group of people I am being inclusive and equitable in my designs. 
                             </p>
-                        </Col>
                     </Row>
                     </Row>
                     </Col>

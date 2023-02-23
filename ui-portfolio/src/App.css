@@ -26,14 +26,6 @@
   box-shadow: #E68BE1 20px 20px 0px;
 }
 
-.latina-design {
-  background-image: url('./assests/latina-design.svg');
-  background-attachment:scroll;
-  background-position: center;
-  background-size: 150%;
-  background-repeat: no-repeat;
-}
-
   body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -161,6 +153,14 @@
     z-index:5;
   }
 
+  .latina-design {
+    background-image: url('./assests/latina-design.svg');
+    background-attachment:scroll;
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+
 }
 
 @media screen and (max-width: 1340px) {
@@ -213,6 +213,34 @@
     font-weight:bold;
     text-shadow:black 1px 1px 10px;
     z-index:5;
+  }
+
+  .latina-design {
+    background-image: url('./assests/latina-design.svg');
+    background-attachment:scroll;
+    background-position: 75% 85%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .latina-design {
+    background-image: url('./assests/latina-design.svg');
+    background-attachment:scroll;
+    background-position: 75% 85%;
+    background-size: 400%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .latina-design {
+    background-image: url('./assests/latina-design.svg');
+    background-attachment:scroll;
+    background-position: 75% 85%;
+    background-size: 700%;
+    background-repeat: no-repeat;
   }
 }
 

@@ -3,7 +3,6 @@ import chat from '../assests/Chat.png';
 import camera from '../assests/Camera.png';
 import bitmojiScreen from '../assests/bitmoji.png';
 import stories from '../assests/stories.png';
-import ghost from '../assests/snap-ghost.png';
 import bitmojiPhone from '../assests/bitmoji-phone.png';
 import bitmojiLean from '../assests/lean.png';
 
@@ -101,8 +100,8 @@ function Project3() {
             </Col>
             <Col sm = {12} md={12} lg={6}>
             <div style={{marginTop:"2%"}}>
-                <Button>Latina Design Corner</Button>
-                <Button>Art Potfolio</Button> 
+                <Button href="https://www.figma.com/file/ulnnS4ORKi2dQRsDyjLPvq/Superior-Snapchat?node-id=2%3A20&t=k6KI1f8bkETRUbGz-1">Figma Files V1</Button> 
+                <Button href="">V2 Coming Soon</Button>
             </div>
             <h2>Iterating on Feedback</h2>
             <Row>
@@ -146,7 +145,7 @@ function Project3() {
             </Row>
             <Row style={{padding:"10%"}}>
                 <div className='figma-container'>
-                    <iframe className='figmaIFrame3' src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPezKLgEffxykvubw1ONI2e%2FSnapchat-Prototype%3Fnode-id%3D0%253A1%26t%3DFKLijkhfM34x4fgL-1" allowfullscreen></iframe>
+                    <iframe title="snapchat figma" className='figmaIFrame3' src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPezKLgEffxykvubw1ONI2e%2FSnapchat-Prototype%3Fnode-id%3D0%253A1%26t%3DFKLijkhfM34x4fgL-1" allowfullscreen></iframe>
                 </div>
                 </Row>
             </Col>

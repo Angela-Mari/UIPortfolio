@@ -18,7 +18,6 @@ import Project3 from './pages/Project3';
 import github from './assests/github-white.png';
 import linkedin from './assests/linkedIn-white.png';
 import spotify from './assests/spotify-white.png';
-import avatarsm from './assests/avatar-sm.png';
 import { useEffect, useState } from 'react';
 import LatinaDesignCorner from './pages/Latina-Design-Corner';
 import menu from "./assests/icons8-menu-rounded-50.png"
@@ -54,21 +53,21 @@ function App() {
             <Col xs={4} >
               <Row className="justify-content-end">
                 <Col xs={6} className="text-end">
-                  <a href="www.angelageorge.com" className="top-nav-link">The Hub</a>
+                  <a href="https://www.angelageorge.com" className="top-nav-link">The Hub</a>
                 </Col>
                 <Col xs={1} className="text-end">
-                  <a href="https://www.linkedin.com/in/angela-george-a5073b164/" target="_blank">
-                    <img src={linkedin} width="30px" height="30px"/>
+                  <a href="https://www.linkedin.com/in/angela-george-a5073b164/" target="_blank" >
+                    <img src={linkedin} width="30px" height="30px" alt="linked-in logo"/>
                   </a>
                 </Col>
                 <Col xs={1}>
-                  <a href="https://github.com/Angela-Mari" target="_blank">
-                  <img src={github} width="30px" height="30px" />
+                  <a href="https://github.com/Angela-Mari" target="_blank" >
+                  <img src={github} width="30px" height="30px" alt="github logo"/>
                   </a>
                 </Col>
                 <Col xs={1}>
-                  <a href="https://open.spotify.com/playlist/7aliolkAQk668klmmlcBtI?si=e59ece244f5b4149https://github.com/Angela-Mari" target="_blank">
-                  <img src={spotify} width="30px" height="30px"/>   
+                  <a href="https://open.spotify.com/playlist/7aliolkAQk668klmmlcBtI?si=e59ece244f5b4149https://github.com/Angela-Mari" target="_blank" >
+                  <img src={spotify} width="30px" height="30px" alt="spotify logo"/>   
                   </a>             
                 </Col>
                 <Col xs={3}>
@@ -78,7 +77,7 @@ function App() {
   
            </Nav>
                 <Col >
-                { key == "/ui-portfolio/" ||  key == "/ui-portfolio/home" || key == "/ui-portfolio/latina-design-corner" ? <svg className="avatar" xmlns="http://www.w3.org/2000/svg" width="198.43" height="429.09" viewBox="0 0 248.25 536.816">
+                { key === "/ui-portfolio/" ||  key === "/ui-portfolio/home" || key === "/ui-portfolio/latina-design-corner" ? <svg className="avatar" xmlns="http://www.w3.org/2000/svg" width="198.43" height="429.09" viewBox="0 0 248.25 536.816">
                   <g id="Avatar" transform="translate(-59.646 558.288) rotate(-90)">
                     <path id="Path_9" data-name="Path 9" d="M311.994,157.451c-4.063,8.255-7.43,3.716-11.494,11.973-15.405-9.589-33.034-16.3-46.215-28.768-5.127-4.853,4.348-12.245,2.437-19.041,20.44-9.561,12.271-10.907,32.711-20.468,7.963,9.29,12.913,22.461,23.887,27.869,14.711,7.249,33.494,1.38,48.568,7.835,11.847,5.074,31.172,20.009,31.539,28.576s-21.14,22.239-30.327,20.718C312.252,177.729,325.238,168.432,311.994,157.451Z" transform="translate(155.489 27.902)" fill="#fac0a2"/>
                     <path id="Path_10" data-name="Path 10" d="M242.757,141.489s7.722,23.789,10.057,36.407-6.921,22.508-6.921,22.508-7.29,4.792-34.2-1.543-73.444-23.8-73.444-23.8-14.069-3.329-24.642-7.15-12.594-6.434-17.65-8.129a18.513,18.513,0,0,0-10.418.081L57.018,146.713l-16.109-5.186s-2.186-10.008,3.123-15.228,10.153-6.144,18.115-5.648,13.732,7.632,13.732,7.632l25.031,16.26,71.1,3.856s16.566-4.628,32.7-4.245S242.757,141.489,242.757,141.489Z" transform="translate(12.768 40.936)" fill="#d5977a"/>
@@ -173,7 +172,7 @@ function App() {
                         </Row>
                         </Navbar.Brand>
                       <Navbar.Toggle aria-controls="basic-navbar-nav">
-                        <img src={menu} width="30px" height="30px"/>
+                        <img src={menu} width="30px" height="30px" alt="hamburger icon"/>
                       </Navbar.Toggle>
                       <Navbar.Collapse id="basic-navbar-nav" style={{paddingLeft:"5%", color:"white"}}>
                         <Nav className="me-auto" onSelect={(k) => setKey(k)}>
@@ -205,7 +204,37 @@ function App() {
                             <Nav.Link eventKey="/ui-portfolio/latina-design-corner">Latina Design Corner</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
+                        <Nav.Item>
+                          <LinkContainer to="https://www.angelageorge.com">
+                            <Nav.Link>The Hub</Nav.Link>
+                          </LinkContainer>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <LinkContainer to="https://www.angelageorge.com">
+                            <Nav.Link>Contact Me</Nav.Link>
+                          </LinkContainer>
+                        </Nav.Item>
                         </Nav>
+                        <Row className="justify-content-right" style={{marginTop:"1%", marginBottom:"1%"}}>
+                
+                <Col xs={1}>
+                  <a href="https://www.linkedin.com/in/angela-george-a5073b164/" target="_blank">
+                    <img src={linkedin} width="30px" height="30px" alt="linked-in logo"/>
+                  </a>
+                </Col>
+                <Col xs={1}>
+                  <a href="https://github.com/Angela-Mari" target="_blank">
+                  <img src={github} width="30px" height="30px" alt="github logo" />
+                  </a>
+                </Col>
+                <Col xs={1}>
+                  <a href="https://open.spotify.com/playlist/7aliolkAQk668klmmlcBtI?si=e59ece244f5b4149https://github.com/Angela-Mari" target="_blank">
+                  <img src={spotify} width="30px" height="30px" alt="spotify logo"/>   
+                  </a>             
+                </Col>
+                <Col xs={3}>
+                </Col>
+              </Row>
                       </Navbar.Collapse>
                     </Container>
                   </Navbar>

@@ -1,11 +1,8 @@
-import {Row, Col, Card, CardGroup, Container, Button} from 'react-bootstrap';
-import webLogo from '../assests/web-logo.png';
+import {Row, Col, Container, Button} from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import home1 from '../assests/home1.jpeg';
 import home2 from '../assests/home2.jpeg';
 import home3 from '../assests/home3.jpeg';
-import { useLocation } from 'react-router-dom';
-
 
 function Home() {
 
@@ -36,11 +33,11 @@ function Home() {
                     </p>
                     <div style={matches? {} : {display:"none"}} >
                       
-                      <Button>Resume</Button>
+                      <Button href="https://angelageorge.com/wp-content/uploads/2023/02/PublicResume.pdf">Resume</Button>
                      
-                      <Button>Latina Design Corner</Button>
+                      <Button href="https://angelageorge.com/ui-portfolio/latina-design-corner">Latina Design Corner</Button>
                       
-                      <Button>Art Potfolio</Button> 
+                      <Button href="https://angelageorge.com/art-portfolio">Art Potfolio</Button> 
                   </div>   
                 
                     </Col>
@@ -53,11 +50,11 @@ function Home() {
                 </Row>
                 <div style={matches? {display:"none"} : {}} >
                       
-                      <Button>Resume</Button>
+                    <Button href="https://angelageorge.com/wp-content/uploads/2023/02/PublicResume.pdf">Resume</Button>
                      
-                      <Button>Latina Design Corner</Button>
-                      
-                      <Button>Art Potfolio</Button> 
+                     <Button href="https://angelageorge.com/ui-portfolio/latina-design-corner">Latina Design Corner</Button>
+                     
+                     <Button href="https://angelageorge.com/art-portfolio">Art Potfolio</Button>
                   </div> 
                 <div style={{marginLeft:"-50%", marginRight:"-50%", marginTop:"2%", paddingBottom:"2%", backgroundColor: "#E68BE1"}}>
                     <Col style={{marginLeft:"25%", paddingTop:"2%", marginRight:"25%"}}>
@@ -73,7 +70,7 @@ function Home() {
                     The final project for Coursera also required the project to benefit the 
                     social good. This motivated me to push my portfolio one step further and 
                     incorporate a networking tool as part of the site. As a Latina designer in 
-                    the tech field, I have always felt like an only in my classes and internships. 
+                    the tech field, <b>I have always felt like an only</b> in my classes and internships. 
                     The Latina Design Corner is designed to connect Latina and minority designers 
                     in a fun way that allows for sharing resources, mentorship, and motivation. 
 
@@ -93,7 +90,7 @@ function Home() {
                         <p><i>Lo-Fi Mockup</i></p>
                     </Col>
                     <Col sm ={12} lg={4} className="text-center">
-                    <iframe className='img-fluid' src="https://xd.adobe.com/embed/ec86a22b-25c6-429f-929c-c56f5b17e9b0-b9d5/" frameborder="0" allowfullscreen></iframe>
+                    <iframe title = "Adobe Prototype" className='img-fluid' src="https://xd.adobe.com/embed/ec86a22b-25c6-429f-929c-c56f5b17e9b0-b9d5/" frameborder="0" allowfullscreen></iframe>
                     <p><i>Adobe XD Hi-Fi Prototype</i></p>
                     </Col>
                 </Row>
@@ -113,11 +110,11 @@ function Home() {
                         </p>
                         <div className='text-center'>
                       
-                        <Button>Course Notes</Button>
+                        <Button href="https://artfullyange.notion.site/Google-UI-UX-Certification-6abcd5d8a49b4765b34fdae891a5d2e9">Course Notes</Button>
                        
-                        <Button>GitHub</Button>
+                        <Button href="https://github.com/Angela-Mari">GitHub</Button>
                         
-                        <Button>LinkedIn</Button> 
+                        <Button href="https://www.linkedin.com/in/angela-george-a5073b164/">LinkedIn</Button> 
                     </div>
                     </Col>
                 </Row>

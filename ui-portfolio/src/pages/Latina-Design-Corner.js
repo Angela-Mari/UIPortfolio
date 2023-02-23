@@ -1,6 +1,4 @@
 import {Row, Col, Container, Button} from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
-import rendering from '../assests/Mockup.png';
 import { useEffect, useState } from 'react';
 import latina from '../assests/embroidery.JPG';
 import market from '../assests/market.png';
@@ -17,7 +15,6 @@ function LatinaDesignCorner() {
         window
         .matchMedia("(min-width: 576px)")
         .addEventListener('change', e => setSize( e.matches ));
-        console.log(size)
       }, []);
 
     return (
@@ -57,7 +54,7 @@ function LatinaDesignCorner() {
                     <h2>Stories</h2>
                     <Row>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
-                            <img src={loteria} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"350px"}}></img>
+                            <img src={loteria} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"350px"}} alt="blog post cover"></img>
                             <h3>Finishing the Google UI/UX Certificate</h3>
                             <p >
                                 {
@@ -71,10 +68,10 @@ function LatinaDesignCorner() {
                                 
                              
                             </p>
-                            <a href="">Read More →</a>
+                            <a href="https://angelageorge.com/coming-soon/">Read More →</a>
                         </Col>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
-                            <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"150px"}}></img>
+                            <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"150px"}} alt="blog post cover"></img>
                             <h3>Being a Latina in STEM: Postgrad Reflection</h3>
                             <p>
                             {
@@ -85,12 +82,12 @@ function LatinaDesignCorner() {
                             "As a Latina in STEM, I've faced a unique..."
                             }
                             </p>
-                            <a href="">Read More →</a>
+                            <a href="https://angelageorge.com/coming-soon/">Read More →</a>
                         </Col>
                         <Col xs={12} sm ={12}  md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
 
                             
-                            <img src={market} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"150px"}}></img>
+                            <img src={market} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"100px", minWidth:"150px", maxWidth:"150px"}} alt="blog post cover"></img>
                             <h3>Talking with a Target UI/UX Designer</h3>
                             <p>
                             {
@@ -101,14 +98,12 @@ function LatinaDesignCorner() {
                             "Hey guys, it's your girl, Angela back ..."
                             } 
                             </p>
-                            <a href="">Read More →</a>
+                            <a href="https://angelageorge.com/coming-soon/">Read More →</a>
                         </Col>
                     </Row>
                     <Row style={{marginBottom:"20%", paddingBottom:"20%"}}>
                       <div>
-                      <Button>Submit a Story</Button>
-                     
-                      <Button>Join the Newsletter</Button>
+                      <Button href="https://angelageorge.com/contact-me/">Submit a Story</Button>
                       </div>
                   </Row> 
                 </Col>
