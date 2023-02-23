@@ -204,16 +204,11 @@ function App() {
                             <Nav.Link eventKey="/ui-portfolio/latina-design-corner">Latina Design Corner</Nav.Link>
                           </LinkContainer>
                         </Nav.Item>
-                        <Nav.Item>
-                          <LinkContainer to="https://www.angelageorge.com">
-                            <Nav.Link>The Hub</Nav.Link>
-                          </LinkContainer>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <LinkContainer to="https://www.angelageorge.com">
-                            <Nav.Link>Contact Me</Nav.Link>
-                          </LinkContainer>
-                        </Nav.Item>
+                        
+                            <a href="https://angelageorge.com" style={{color:"white", textDecoration:'none'}}>The Hub</a>
+                          
+                            <a href="https://angelageorge.com/contact-me" style={{color:"white", textDecoration:'none', paddingTop:"1%", paddingBottom:"1%"}}>Contact Me</a>
+                         
                         </Nav>
                         <Row className="justify-content-right" style={{marginTop:"1%", marginBottom:"1%"}}>
                 
