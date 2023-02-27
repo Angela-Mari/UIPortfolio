@@ -91,7 +91,7 @@ function Home() {
                     </Col>
                     <Col sm ={12} lg={4} className="text-center">
                     <iframe title = "Adobe Prototype" className='img-fluid' src="https://xd.adobe.com/embed/ec86a22b-25c6-429f-929c-c56f5b17e9b0-b9d5/" frameborder="0" allowfullscreen></iframe>
-                    <p><i>Adobe XD Hi-Fi Prototype</i></p>
+                    <a href="https://xd.adobe.com/view/ec86a22b-25c6-429f-929c-c56f5b17e9b0-b9d5/"><p><i>Adobe XD Hi-Fi Prototype</i></p></a>
                     </Col>
                 </Row>
                 <Row style={{marginLeft:""}}>
