@@ -42,20 +42,19 @@ function LatinaDesignCorner() {
                     <Row>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
                             <img src={loteria} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
-                            <h3>Finishing the Google UI/UX Certificate</h3>
+                            <h3>Should You Do the Google UX Design Certificate?</h3>
                             <p >
                                 {
                             
                                     size? 
-                                    "Hey there, design enthusiasts! If you're looking to break into the world of user experience design, you might be considering the Google UI/UX Certificate program to beef up your design skills..."
-                                    
+                                    "It only took 4 months, but here we are, I completed the Google UX Design Professional Certificate Program. While I don’t have a UI/UX job (necessarily)… this post is intended for lifelong learners, curious minds, and future designers...”"
                                     : 
-                                    "Hey there, design enthusiasts! If you're ..."
+                                    "It only took 4 months, but here we are, I ..."
                                     }
                                 
                              
                             </p>
-                            <a href="https://angelageorge.com/coming-soon/">Read More →</a>
+                            <a href="https://angelageorge.com/google-ux-design-certificate/">Read More →</a>
                         </Col>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
                             <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
@@ -80,7 +79,7 @@ function LatinaDesignCorner() {
                             {
                             
                             size? 
-                            "Hey guys, it's your girl, Angela back with another article! This time, I wanted to share my experience meeting with a UI/UX designer at Target, one of my favorite stores. In this article I'll go through the good, the bad, and the ugly..."
+                            "Hey guys, it's your girl, Angela back with another article! This time, I wanted to share my experience meeting with a UI/UX designer at Target, and what that talk ultimatley motivated me to do..."
                             :
                             "Hey guys, it's your girl, Angela back ..."
                             } 
