@@ -1,13 +1,13 @@
 import {Row, Col, Container, Button, Carousel} from 'react-bootstrap';
 import chat from '../assests/Chat.png';
 import camera from '../assests/Camera.png';
-import bitmojiScreen from '../assests/bitmoji.png';
+import aiassist from '../assests/aiassist.gif';
 import stories from '../assests/stories.png';
 import bitmojiPhone from '../assests/bitmoji-phone.png';
 import bitmojiLean from '../assests/lean.png';
-
-
-
+import editBitmoji from '../assests/EditBitmoji.png';
+import settingsv1 from '../assests/settingsv1.png';
+import skinToneEditor from '../assests/SkintoneEditor.png';
 
 function Project3() {
     return (
@@ -49,7 +49,7 @@ function Project3() {
                         alt="camera view in Snapchat"
                         />
                         <Carousel.Caption>
-                        <h3>Camera</h3>
+                        <div><i>Camera</i></div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -59,7 +59,7 @@ function Project3() {
                         alt="chat view in Snapchat"
                         />
                         <Carousel.Caption>
-                        <h3>Home</h3>
+                        <div><i>Home</i></div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -69,7 +69,7 @@ function Project3() {
                         alt="stories view in Snapchat"
                         />
                         <Carousel.Caption>
-                        <h3>Stories</h3>
+                        <div><i>Stories</i></div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     </Carousel>
@@ -100,8 +100,8 @@ function Project3() {
             </Col>
             <Col sm = {12} md={12} lg={6}>
             <div style={{marginTop:"2%"}}>
-                <Button href="https://www.figma.com/file/ulnnS4ORKi2dQRsDyjLPvq/Superior-Snapchat?node-id=2%3A20&t=k6KI1f8bkETRUbGz-1">Figma Files V1</Button> 
-                <Button href="">V2 Coming Soon</Button>
+                <Button href="https://www.figma.com/proto/ulnnS4ORKi2dQRsDyjLPvq/Superior-Snapchat?node-id=37-15&scaling=scale-down&page-id=0%3A1&starting-point-node-id=37%3A15&show-proto-sidebar=1">Prototype V1</Button> 
+                <Button href="https://www.figma.com/proto/PezKLgEffxykvubw1ONI2e/Snapchat-Prototype?node-id=1-98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A98">Prototype V2</Button>
             </div>
             <h2>Iterating on Feedback</h2>
             <Row>
@@ -109,8 +109,8 @@ function Project3() {
             <p>
             After presenting the redesign to our class, new issues were revealed with the usability 
             of our mockup. Buttons were too small and key features were still buried. Using this 
-            feedback, I redesigned the settings page and the profile page to look both more modern 
-            and more usable.  
+            feedback, I redesigned the settings page and the bitmoji page to be both more modern 
+            and usable.  
             </p>
             </Col>
             <Col xs={4} sm={2}>
@@ -118,30 +118,69 @@ function Project3() {
             </Col>
             </Row>
             <Row>
-            <Col sm={8}>
+            <Col sm={7}>
             <p>
-            In V2 of the Snapchat redesign, the focus is still on chats but issues of privacy are 
-            better addressed. In the original research, users were concerned with the public nature 
-            of profiles on the app as well as difficulty finding privacy settings related to location 
-            services. Both features needed to be prioritized in a new way for V2. My innovation on the 
-            design was creating a privacy wizard which guides users through each setting. I have also 
-            integrated some cyber security measures which default the user to private and location 
-            services off. Users must opt into publicizing their profiles and location. 
+            In V2 of the Snapchat redesign, settings are now searchable with an AI assistant and the Bitmoji color pickers are color blind accessible. 
+            Usability issues with buttons being too small are also corrected. A new observation was that the skin and hair colors in the Bitmoji Editor were not colorblind accessible. I designed a labeled color picker that clearly idenitfies the base hue and 
+            if it is a pure hue, tone, shade, or tint. I followed a modified <a href="https://en.wikipedia.org/wiki/Fitzpatrick_scale" >Fitzpatrick scale</a> to get a broad range of
+            skintones without overwheling the UI. I don't think it is perfect, but I think it is a good start to making the color picker both accessible and diverse. 
             </p>
             <h3>Future Work</h3>
             <p>
             While the new redesign addresses some of the gaps, more research should be conducted to 
-            create a final iteration of this design. The chat page and chat settings were not 
-            investigated beyond deleting a group chat from your inbox. I am certain there are ways 
-            to improve the UX of the chats. Especially since they are the favored feature of the app.  
-
+            create a final iteration of this design. I am certain there are ways 
+            to improve the UX of the stories, profile, and even chats; especially as the favored feature of the app.  
 
             </p>
             </Col>
-            <Col sm={4} className="text-center">
-                <img src={bitmojiScreen} alt="bitmoji view in Snapchat" className='snap-photos'/>
-                <div><i>Profile V2</i></div>
+            <Col sm={5} className="text-center"> 
+            <Row className="justify-content-center">
+            <Carousel style={{width:"250px", height:"390px", marginBottom:"10%", marginTop:"10%"}} variant="dark">
+                    <Carousel.Item>
+                        <img
+                        className="snap-photos"
+                        src={editBitmoji}
+                        alt="bitmoji Editor version 1"
+                        />
+                        <Carousel.Caption style={{marginLeft:"2rem"}}>
+                        <div><i>Bitmoji V1</i></div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="snap-photos"
+                        src={skinToneEditor}
+                        alt="Bitmoji Skintone Editor version 2"
+                        />
+                        <Carousel.Caption style={{marginLeft:"2rem"}}> 
+                        <div><i>Bitmoji V2</i></div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="snap-photos"
+                        src={settingsv1}
+                        alt="settings version 1"
+                        />
+                        <Carousel.Caption style={{marginLeft:"1.5rem"}}>
+                        <div><i>Settings V1</i></div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <img
+                        className="snap-photos"
+                        src={aiassist}
+                        alt="ai assist view in settings"
+                        />
+                        <Carousel.Caption style={{marginLeft:"1.5rem"}}>
+                        <div><i>Settings V2</i></div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    
+                    </Carousel>
+                    </Row>
             </Col>
+            
             </Row>
             <Row style={{padding:"10%"}}>
                 <div className='figma-container'>
