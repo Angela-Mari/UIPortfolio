@@ -74,7 +74,7 @@ function Project3() {
                     </Carousel.Item>
                     </Carousel>
                 </Row>
-                <h2 style={{marginTop:"2%"}}>Mindful Content</h2>
+                <h2 style={{marginTop:"2rem"}}>Mindful Content</h2>
                 <p>
                 The reasoning behind redesigning the story page was to prioritize the relevancy of content 
                 to the user. Many users continue to use Snapchat solely for the story feature however this 
@@ -105,7 +105,8 @@ function Project3() {
             </div>
             <h2>Iterating on Feedback</h2>
             <Row>
-            <Col xs={8} sm={10}>
+            <Col xs={{span: 7, order: 1}} sm={10}>
+            
             <p>
             After presenting the redesign to our class, new issues were revealed with the usability 
             of our mockup. Buttons were too small and key features were still buried. Using this 
@@ -113,8 +114,8 @@ function Project3() {
             and usable.  
             </p>
             </Col>
-            <Col xs={4} sm={2}>
-            <img src={bitmojiLean} alt="gesturing bitmoji" width="200px" style={{marginLeft:"-50px", marginTop:"-100px"}}/>
+            <Col xs={{span: 5, order: 2}} sm={2}>
+            <img src={bitmojiLean} alt="gesturing bitmoji" width="200px" className='bitmoji-lean'/>
             </Col>
             </Row>
             <Row>
