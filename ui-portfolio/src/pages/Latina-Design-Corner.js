@@ -1,7 +1,7 @@
 import {Row, Col, Container, Button} from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import latina from '../assests/embroidery.JPG';
-import market from '../assests/market.png';
+import market from '../assests/minions.jpg';
 import loteria from '../assests/loteria.jpg';
 
 
@@ -41,7 +41,7 @@ function LatinaDesignCorner() {
                     <h2>Stories</h2>
                     <Row>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
-                            <img src={loteria} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
+                            <img src={loteria} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"200px", maxWidth:"200px"}} alt="blog post cover"></img>
                             <h3>Should You Do the Google UX Design Certificate?</h3>
                             <p >
                                 {
@@ -57,7 +57,7 @@ function LatinaDesignCorner() {
                             <a href="https://angelageorge.com/google-ux-design-certificate/">Read More →</a>
                         </Col>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
-                            <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
+                            <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"200px", maxWidth:"200px"}} alt="blog post cover"></img>
                             <h3>Latina CS Major: Postgrad Reflection</h3>
                             <p>
                             {
@@ -73,18 +73,18 @@ function LatinaDesignCorner() {
                         <Col xs={12} sm ={12}  md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
 
                             
-                            <img src={market} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"250px", maxWidth:"250px"}} alt="blog post cover"></img>
-                            <h3>Talking with a Target UI/UX Designer</h3>
+                            <img src={market} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"200px", maxWidth:"200px"}} alt="blog post cover"></img>
+                            <h3>Interviewing a Target UI/UX Designer</h3>
                             <p>
                             {
                             
                             size? 
-                            "Hey guys, it's your girl, Angela back with another article! This time, I wanted to share my experience meeting with a UI/UX designer at Target, and what that talk ultimatley motivated me to do..."
+                            "After graduating with my CS degree, I felt like I didn’t have enough insight into careers outside of software development. I was fortunate to connect with a UI designer at Target for an informational interview. I asked about..."
                             :
-                            "Hey guys, it's your girl, Angela back ..."
+                            "After graduating with my CS degree, I felt ..."
                             } 
                             </p>
-                            <a href="https://angelageorge.com/coming-soon/">Read More →</a>
+                            <a href="https://angelageorge.com/interviewing-a-ui-ux-designer/">Read More →</a>
                         </Col>
                         </Row>
                     </Row>
