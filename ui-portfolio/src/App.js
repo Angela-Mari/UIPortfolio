@@ -155,7 +155,7 @@ function App() {
                   {/* <Row style={{marginTop:"4%"}}>
                   
                   </Row> */}
-                  <Navbar expand="xs" className='top-nav-sm'>
+                  <Navbar expand="xs" className='top-nav-sm' collapseOnSelect>
                     <Container>
                      
                       <Navbar.Brand>
