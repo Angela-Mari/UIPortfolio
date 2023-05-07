@@ -58,17 +58,17 @@ function LatinaDesignCorner() {
                         </Col>
                         <Col xs={12} sm ={12} md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
                             <img src={latina} className="img-fluid" style={{objectFit:"cover", marginBottom:"15px", maxHeight:"200px", minWidth:"200px", maxWidth:"200px"}} alt="blog post cover"></img>
-                            <h3>Latina CS Major: Postgrad Reflection</h3>
+                            <h3>Arc Browser Review: a UI/UX Success Story</h3>
                             <p>
                             {
                             
                             size? 
-                            "As a Latina in STEM, I've faced a unique set of challenges that my non-Latina peers might not fully understand. From constantly feeling like I had to prove myself to being one of the few women of color..."
+                            "What is the Arc Browser? Arc is a new player in the browsing space, less than a year old, and now in a public (invite-only) beta. Despite its infancy, it could be positioned to knock Chrome out of its decade-long domination..."
                             :
-                            "As a Latina in STEM, I've faced a unique..."
+                            "What is the Arc Browser? Arc is a new..."
                             }
                             </p>
-                            <a href="https://angelageorge.com/coming-soon/">Read More →</a>
+                            <a href="https://angelageorge.com/arc-browser-review/">Read More →</a>
                         </Col>
                         <Col xs={12} sm ={12}  md={12} lg={12} xl={3} style={{marginRight:"20px", backgroundColor:"white", paddingBottom:"15px"}}>
 
