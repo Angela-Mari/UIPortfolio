@@ -255,7 +255,7 @@ function App() {
           </div>
           </Router>
           <footer className="footer">
-            <Col className="text-center" style={{paddingTop:"15px", color:"white"}}>Ⓒ Ángela George 2022</Col>
+            <Col className="text-center" style={{paddingTop:"15px", color:"white"}}>Ⓒ Ángela George 2024</Col>
           </footer>
           </div>
 
